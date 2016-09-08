@@ -1,0 +1,3877 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Light\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Thu May 12 2016 11:41:14 GMT+0200\n"
+"PO-Revision-Date: Wed Jun 22 2016 20:35:58 GMT+0200 (W. Europe Standard "
+"Time)\n"
+"Last-Translator: Chris Starjive <chris@starjive.com>\n"
+"Language-Team: \n"
+"Language: Swedish\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Loco-Target-Locale: sv_SE"
+
+#: ../../comments.php:12
+msgid "Please do not load this page directly. Thanks!"
+msgstr ""
+
+#: ../../comments.php:15
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../../comments.php:32
+#, php-format
+msgid "One Response to %2$s"
+msgid_plural "%1$s Responses to %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../../comments.php:48
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: ../../comments.php:49
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../../comments.php:57
+msgid "Trackbacks/Pingbacks"
+msgstr ""
+
+#: ../../comments.php:78
+msgid "Comments are closed."
+msgstr ""
+
+#: ../../comments.php:79
+msgid "No comments yet."
+msgstr ""
+
+#: ../../app/backend/functions.php:869
+msgid "Framework Updates"
+msgstr ""
+
+#: ../../app/backend/functions.php:875
+msgid "A new version of Framework is available."
+msgstr ""
+
+#: ../../app/backend/functions.php:876
+msgid ""
+"This updater will download and extract the latest Framework files to your "
+"current theme's functions folder."
+msgstr ""
+
+#: ../../app/backend/functions.php:877
+msgid ""
+"We recommend backing up your theme files and updating WordPress to latest "
+"version before proceeding."
+msgstr ""
+
+#: ../../app/backend/functions.php:886
+msgid "Before upgrading, we recommend reading the Framework release notes"
+msgstr ""
+
+#: ../../app/backend/functions.php:886
+msgid "Read the Release Notes"
+msgstr ""
+
+#: ../../app/backend/functions.php:1149
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../../app/backend/functions.php:1212
+msgid "Arial"
+msgstr ""
+
+#: ../../app/backend/functions.php:1213
+msgid "Verdana"
+msgstr ""
+
+#: ../../app/backend/functions.php:1214
+msgid "Trebuchet"
+msgstr ""
+
+#: ../../app/backend/functions.php:1215
+msgid "Georgia"
+msgstr ""
+
+#: ../../app/backend/functions.php:1216
+msgid "Times New Roman"
+msgstr ""
+
+#: ../../app/backend/functions.php:1217
+msgid "Tahoma"
+msgstr ""
+
+#: ../../app/backend/functions.php:1218
+msgid "Palatino"
+msgstr ""
+
+#: ../../app/backend/functions.php:1219
+msgid "Helvetica *"
+msgstr ""
+
+#: ../../app/backend/functions.php:1220
+msgid "Calibri *"
+msgstr ""
+
+#: ../../app/backend/functions.php:1221
+msgid "Myriad Pro *"
+msgstr ""
+
+#: ../../app/backend/functions.php:1222
+msgid "Lucida"
+msgstr ""
+
+#: ../../app/backend/functions.php:1223
+msgid "Arial Black"
+msgstr ""
+
+#: ../../app/backend/functions.php:1224
+msgid "Gill Sans *"
+msgstr ""
+
+#: ../../app/backend/functions.php:1225
+msgid "Geneva *"
+msgstr ""
+
+#: ../../app/backend/functions.php:1226
+msgid "Impact"
+msgstr ""
+
+#: ../../app/backend/functions.php:1227
+msgid "Courier"
+msgstr ""
+
+#: ../../app/backend/functions.php:1228
+msgid "Century Gothic"
+msgstr ""
+
+#: ../../app/backend/functions.php:2146
+msgid "&larr; Previous"
+msgstr ""
+
+#: ../../app/backend/functions.php:2147
+msgid "Next &rarr;"
+msgstr ""
+
+#: ../../app/backend/functions.php:2270
+msgid "You are here:"
+msgstr ""
+
+#: ../../app/backend/functions.php:2273 ../../app/frontend/actions.php:1567 ../..
+#: app/frontend/actions.php:1582 ../..
+#: app/frontend/integrations/sensei/functions.php:63
+msgid "Home"
+msgstr ""
+
+#: ../../app/backend/functions.php:2489
+msgid "g:i a"
+msgstr ""
+
+#: ../../app/backend/functions.php:2492
+#, php-format
+msgid "Minute %1$s"
+msgstr ""
+
+#: ../../app/backend/functions.php:2492
+msgid "i"
+msgstr ""
+
+#: ../../app/backend/functions.php:2495
+msgid "g a"
+msgstr ""
+
+#: ../../app/backend/functions.php:2505 ../../app/backend/functions.php:2505 ../..
+#: app/backend/functions.php:2511 ../../app/backend/functions.php:2511 ../..
+#: app/backend/functions.php:2516 ../../app/backend/functions.php:2516 ../..
+#: app/backend/functions.php:2521
+msgid "Y"
+msgstr ""
+
+#: ../../app/backend/functions.php:2506 ../../app/backend/functions.php:2506 ../..
+#: app/backend/functions.php:2517
+msgid "F"
+msgstr ""
+
+#: ../../app/backend/functions.php:2507
+msgid "j"
+msgstr ""
+
+#: ../../app/backend/functions.php:2512
+#, php-format
+msgid "Week %1$s"
+msgstr ""
+
+#: ../../app/backend/functions.php:2512
+msgid "W"
+msgstr ""
+
+#: ../../app/backend/functions.php:2528
+#, php-format
+msgid "Search results for &quot;%1$s&quot;"
+msgstr ""
+
+#: ../../app/backend/functions.php:2532
+msgid "404 Not Found"
+msgstr ""
+
+#: ../../app/backend/functions.php:2820
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: ../../app/backend/functions.php:2931
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: ../../app/backend/functions.php:2933
+msgid "You have taken too long. Please go back and retry."
+msgstr ""
+
+#: ../../app/backend/functions.php:2966
+#, php-format
+msgid ""
+"You have setup a static front page in %1$sSettings > Reading%2$s.  Please "
+"set it to show \"Your latest posts\" if you want to display the default "
+"homepage in %3$s."
+msgstr ""
+
+#: ../../app/backend/functions.php:2967
+msgid "Close"
+msgstr ""
+
+#: ../../app/backend/functions.php:3036
+#, php-format
+msgid "Framework %s"
+msgstr ""
+
+#: ../../app/backend/interface.php:215
+#, php-format
+msgid ""
+"Framework update is available (v%s). %sDownload new version%s (%sSee "
+"Changelog%s)"
+msgstr ""
+
+#: ../../app/backend/interface.php:260
+#, php-format
+msgid ""
+"An important Framework update is available (v%s). %sDownload new version%s "
+"(%sSee Changelog%s)"
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:61
+msgid "Settings Backup"
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:61 ../../app/backend/classes/backup.php:84
+msgid "Backup Settings"
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:85
+msgid "Import Theme Settings"
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:87
+msgid "Import your theme settings from a previously exported backup."
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:95
+msgid "Choose a file"
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:99
+#, php-format
+msgid "Maximum Size: %s"
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:106
+msgid "Upload and Import"
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:111
+msgid "Export Theme Settings"
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:113
+msgid ""
+"Export your settings and download them to your computer as an importable "
+"text file."
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:120
+msgid "Export"
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:124
+msgid "All Settings"
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:125
+msgid "This will contain all of the options listed below."
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:127
+msgid "Theme Options"
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:128
+msgid "Framework Settings"
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:137
+msgid "Download Export File"
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:156
+#, php-format
+msgid ""
+"Please note that this backup manager backs up only your settings and not "
+"your content. To backup your content, please use the %sWordPress Export "
+"Tool%s."
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:159
+msgid "There was a problem importing your settings. Please try again."
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:161
+msgid "There was a problem exporting your settings. Please try again."
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:163
+msgid "The import file you've provided is invalid. Please try again."
+msgstr ""
+
+#: ../../app/backend/classes/backup.php:165
+#, php-format
+msgid "Settings successfully imported. | Return to %sTheme Options%s"
+msgstr ""
+
+#: ../../app/backend/classes/core.php:172 ../../app/backend/classes/core.php:181
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:75 ../../app/backend/classes/fields.php:
+#: 1553 ../../app/backend/classes/fields.php:1595
+msgid "The settings data provided is malformed. Please try again."
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:243
+msgid "The provided field data is invalid and cannot be validated."
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:792
+msgid "Thin"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:792
+msgid "Thin Italic"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:792 ../../app/frontend/options.php:1888
+msgid "Normal"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:792
+msgid "Italic"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:792
+msgid "Bold"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:792
+msgid "Bold/Italic"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:806
+msgid "-- Google WebFonts --"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:909
+msgid "Solid"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:909
+msgid "Dashed"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:909
+msgid "Dotted"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:1285 ../../app/backend/classes/fields.php:
+#: 1315
+#, php-format
+msgid "Select %s"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:1285 ../../app/backend/classes/fields.php:
+#: 1315
+#, php-format
+msgid "Use image as %s"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:1285 ../../app/backend/classes/fields.php:
+#: 1315
+msgid "Upload"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:1291 ../../app/backend/classes/fields.php:
+#: 1321
+#, php-format
+msgid "Remove %s"
+msgstr ""
+
+#: ../../app/backend/classes/fields.php:1344
+msgid "@"
+msgstr ""
+
+#: ../../app/backend/classes/meta.php:74 ../../app/backend/classes/meta.php:84
+#, php-format
+msgid "%s Settings"
+msgstr ""
+
+#: ../../app/backend/classes/screen-admin-base.php:168
+msgid "Download"
+msgstr ""
+
+#: ../../app/backend/classes/screen-admin-base.php:172 ../..
+#: app/backend/classes/screen-admin-base.php:229
+msgid "Activate"
+msgstr ""
+
+#: ../../app/backend/classes/screen-admin-base.php:175 ../..
+#: app/backend/classes/screen-admin-base.php:232
+msgid "Activated"
+msgstr ""
+
+#: ../../app/backend/classes/screen-admin-base.php:191 ../..
+#: app/backend/classes/screen-admin-base.php:248
+#, php-format
+msgid "Extend %1$s %2$s"
+msgstr ""
+
+#: ../../app/backend/classes/screen-admin-base.php:191 ../..
+#: app/backend/classes/screen-admin-base.php:248
+#, php-format
+msgid ""
+"%1$s offers support for several plugins allowing you add advanced "
+"functionality at the click of a button."
+msgstr ""
+
+#: ../../app/backend/classes/screen-admin-base.php:191 ../..
+#: app/backend/classes/screen-admin-base.php:248
+msgid "To install or activate them, use the actions below."
+msgstr ""
+
+#: ../../app/backend/classes/screen-admin-base.php:192 ../..
+#: app/backend/classes/screen-admin-base.php:249
+msgid "Plugin"
+msgstr ""
+
+#: ../../app/backend/classes/screen-admin-base.php:225
+msgid "Not Active"
+msgstr ""
+
+#: ../../app/backend/classes/screen-admin-base.php:265 ../../app/frontend/options.
+#: php:1461
+msgid "WooCommerce"
+msgstr ""
+
+#: ../../app/backend/classes/screen-admin-base.php:265
+msgid "An ecommerce toolkit to help you sell anything. Beautifully."
+msgstr ""
+
+#: ../../app/backend/classes/screen-admin-base.php:269 ../../app/frontend/options.
+#: php:1925
+msgid "Projects"
+msgstr ""
+
+#: ../../app/backend/classes/screen-admin-base.php:269
+msgid "Showcase your recent projects."
+msgstr ""
+
+#: ../../app/backend/classes/screen-framework.php:41 ../..
+#: app/backend/classes/screen-framework.php:41 ../../app/backend/classes/screen-
+#: framework.php:138
+msgid "Framework"
+msgstr ""
+
+#: ../../app/backend/classes/screen-framework.php:76
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ../../app/backend/classes/screen-framework.php:92
+msgid "Update Framework"
+msgstr ""
+
+#: ../../app/backend/classes/screen-framework.php:94
+msgid "Backup/Import Your Settings"
+msgstr ""
+
+#: ../../app/backend/classes/screen-framework.php:95
+msgid "Read the Documentation"
+msgstr ""
+
+#: ../../app/backend/classes/screen-framework.php:111
+msgid "Theme"
+msgstr ""
+
+#: ../../app/backend/classes/screen-framework.php:112
+msgid "Version"
+msgstr ""
+
+#: ../../app/backend/classes/screen-welcome.php:87
+msgid "Current theme preview"
+msgstr ""
+
+#: ../../app/backend/classes/screen-welcome.php:89
+#, php-format
+msgid "Welcome to %s"
+msgstr ""
+
+#: ../../app/backend/classes/screen-welcome.php:96
+#, php-format
+msgid "This <a href=\"%1$s\">child theme</a> loads its parent theme, %2$s."
+msgstr ""
+
+#: ../../app/backend/classes/screen-welcome.php:97
+msgid "http://codex.wordpress.org/Child_Themes"
+msgstr ""
+
+#: ../../app/backend/classes/screen-welcome.php:102
+#, php-format
+msgid "Configure %s"
+msgstr ""
+
+#: ../../app/backend/classes/screen-welcome.php:103
+msgid "View Documentation &rarr;"
+msgstr ""
+
+#: ../../app/backend/classes/screen-welcome.php:133
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: ../../app/backend/classes/screen-welcome.php:137
+#, php-format
+msgid "%s Version %s"
+msgstr ""
+
+#: ../../app/backend/classes/screen-welcome.php:142
+#, php-format
+msgid "Framework %s - %s"
+msgstr ""
+
+#: ../../app/backend/classes/screen-welcome.php:142
+#, php-format
+msgid "%sUpdate%s"
+msgstr ""
+
+#: ../../app/backend/classes/screen.php:49
+msgid "No menu found for the specified menu key."
+msgstr ""
+
+#: ../../app/backend/classes/settings.php:109
+msgid "Settings saved."
+msgstr ""
+
+#: ../../app/frontend/actions.php:129
+msgid "Primary Menu"
+msgstr ""
+
+#: ../../app/frontend/actions.php:134
+msgid "Top Menu"
+msgstr ""
+
+#: ../../app/frontend/actions.php:1103
+msgid ""
+"Setup slider by adding <strong>Post Tags</strong> in <em>Magazine Template > "
+"Posts Slider</em>."
+msgstr ""
+
+#: ../../app/frontend/actions.php:1355
+msgid "Please add some slider posts via Slides > Add New"
+msgstr ""
+
+#: ../../app/frontend/actions.php:1360
+msgid ""
+"Please note that this slider requires 2 or more slides in order to function. "
+"Please add another slide."
+msgstr ""
+
+#: ../../app/frontend/actions.php:1552
+msgid "Return to Content"
+msgstr ""
+
+#: ../../app/frontend/actions.php:1731
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: ../../app/frontend/actions.php:1736
+#, php-format
+msgid "View all posts by %s %s"
+msgstr ""
+
+#: ../../app/frontend/actions.php:1911 ../..
+#: app/frontend/extensions/meta/classes/meta.php:104
+msgid "By"
+msgstr ""
+
+#: ../../app/frontend/actions.php:1911
+msgctxt "post datetime"
+msgid "on"
+msgstr ""
+
+#: ../../app/frontend/actions.php:1911 ../..
+#: app/frontend/extensions/meta/classes/meta.php:104
+msgid "in"
+msgstr ""
+
+#: ../../app/frontend/actions.php:2013 ../../templates/template-contact-form.php:
+#: 225
+msgid "Name"
+msgstr ""
+
+#: ../../app/frontend/actions.php:2013 ../../app/frontend/actions.php:2015
+msgid "required"
+msgstr ""
+
+#: ../../app/frontend/actions.php:2015
+msgid "Email (will not be published)"
+msgstr ""
+
+#: ../../app/frontend/actions.php:2017
+msgid "Website"
+msgstr ""
+
+#: ../../app/frontend/actions.php:2044
+msgid "Submit Comment"
+msgstr ""
+
+#: ../../app/frontend/actions.php:2047
+msgid "Click here to cancel reply."
+msgstr ""
+
+#: ../../app/frontend/comments.php:18
+msgid "at"
+msgstr ""
+
+#: ../../app/frontend/comments.php:19
+msgid "Direct link to this comment"
+msgstr ""
+
+#: ../../app/frontend/comments.php:20
+msgid "Edit"
+msgstr ""
+
+#: ../../app/frontend/comments.php:29
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../../app/frontend/functions.php:37
+msgid "Older posts"
+msgstr ""
+
+#: ../../app/frontend/functions.php:38
+msgid "Newer posts"
+msgstr ""
+
+#: ../../app/frontend/functions.php:96
+msgctxt "post type general name"
+msgid "Slides"
+msgstr ""
+
+#: ../../app/frontend/functions.php:97
+msgctxt "post type singular name"
+msgid "Slide"
+msgstr ""
+
+#: ../../app/frontend/functions.php:98
+msgctxt "slide"
+msgid "Add New"
+msgstr ""
+
+#: ../../app/frontend/functions.php:99
+msgid "Add New Slide"
+msgstr ""
+
+#: ../../app/frontend/functions.php:100
+msgid "Edit Slide"
+msgstr ""
+
+#: ../../app/frontend/functions.php:101
+msgid "New Slide"
+msgstr ""
+
+#: ../../app/frontend/functions.php:102
+msgid "View Slide"
+msgstr ""
+
+#: ../../app/frontend/functions.php:103
+msgid "Search Slides"
+msgstr ""
+
+#: ../../app/frontend/functions.php:104
+msgid "No slides found"
+msgstr ""
+
+#: ../../app/frontend/functions.php:105
+msgid "No slides found in Trash"
+msgstr ""
+
+#: ../../app/frontend/functions.php:128
+msgctxt "taxonomy general name"
+msgid "Slide Groups"
+msgstr ""
+
+#: ../../app/frontend/functions.php:129
+msgctxt "taxonomy singular name"
+msgid "Slide Group"
+msgstr ""
+
+#: ../../app/frontend/functions.php:130
+msgid "Search Slide Groups"
+msgstr ""
+
+#: ../../app/frontend/functions.php:131
+msgid "All Slide Groups"
+msgstr ""
+
+#: ../../app/frontend/functions.php:132
+msgid "Parent Slide Group"
+msgstr ""
+
+#: ../../app/frontend/functions.php:133
+msgid "Parent Slide Group:"
+msgstr ""
+
+#: ../../app/frontend/functions.php:134
+msgid "Edit Slide Group"
+msgstr ""
+
+#: ../../app/frontend/functions.php:135
+msgid "Update Slide Group"
+msgstr ""
+
+#: ../../app/frontend/functions.php:136
+msgid "Add New Slide Group"
+msgstr ""
+
+#: ../../app/frontend/functions.php:137
+msgid "New Slide Group Name"
+msgstr ""
+
+#: ../../app/frontend/functions.php:138
+msgid "Slide Groups"
+msgstr ""
+
+#: ../../app/frontend/functions.php:168 ../../app/frontend/functions.php:207 ../..
+#: app/frontend/options.php:1703
+msgid "Subscribe"
+msgstr ""
+
+#: ../../app/frontend/functions.php:363
+msgid "Tag Archives"
+msgstr ""
+
+#: ../../app/frontend/functions.php:380
+msgid " Archives"
+msgstr ""
+
+#: ../../app/frontend/functions.php:386
+#, php-format
+msgid "%1$s Archives: %2$s"
+msgstr ""
+
+#: ../../app/frontend/options.php:46 ../../app/frontend/options.php:47
+msgid "Select a number:"
+msgstr ""
+
+#: ../../app/frontend/options.php:55
+msgid "The Image"
+msgstr ""
+
+#: ../../app/frontend/options.php:55
+msgid "The Post"
+msgstr ""
+
+#: ../../app/frontend/options.php:70
+msgid "Select a Slide Group:"
+msgstr ""
+
+#: ../../app/frontend/options.php:97
+msgid "General Settings"
+msgstr ""
+
+#: ../../app/frontend/options.php:101
+msgid "Quick Start"
+msgstr ""
+
+#: ../../app/frontend/options.php:104
+msgid "Theme Stylesheet"
+msgstr ""
+
+#: ../../app/frontend/options.php:105
+msgid "Select your themes alternative color scheme."
+msgstr ""
+
+#: ../../app/frontend/options.php:111
+msgid "Logotype"
+msgstr ""
+
+#: ../../app/frontend/options.php:112
+msgid "Upload a logotype for your theme, or specify an image URL directly."
+msgstr ""
+
+#: ../../app/frontend/options.php:117
+msgid "Favicon"
+msgstr ""
+
+#: ../../app/frontend/options.php:118
+msgid ""
+"Upload a 16x16 pixel ico/png/gif image that will represent your website's "
+"favicon, or specify an image URL directly."
+msgstr ""
+
+#: ../../app/frontend/options.php:123
+msgid "Touch Icon"
+msgstr ""
+
+#: ../../app/frontend/options.php:124
+msgid ""
+"Upload a 180x180 pixel png image that will represent your website's touch "
+"icon, or specify an image URL directly."
+msgstr ""
+
+#: ../../app/frontend/options.php:129
+msgid "Tracking Code"
+msgstr ""
+
+#: ../../app/frontend/options.php:130
+msgid ""
+"Paste your Google Analytics (or other) tracking code here. This will be "
+"added into the footer template of your theme."
+msgstr ""
+
+#: ../../app/frontend/options.php:135
+msgid "Tracking Code Output"
+msgstr ""
+
+#: ../../app/frontend/options.php:136
+msgid ""
+"Moves the output of your themes Tracking Code setting from the footer to the "
+"header."
+msgstr ""
+
+#: ../../app/frontend/options.php:141
+msgid "Subscription Settings"
+msgstr ""
+
+#: ../../app/frontend/options.php:144
+msgid "RSS URL"
+msgstr ""
+
+#: ../../app/frontend/options.php:145
+msgid "Enter your preferred RSS URL. (Feedburner or other)"
+msgstr ""
+
+#: ../../app/frontend/options.php:150
+msgid "Display Options"
+msgstr ""
+
+#: ../../app/frontend/options.php:153
+msgid "Custom CSS"
+msgstr ""
+
+#: ../../app/frontend/options.php:154
+msgid "Quickly add some CSS to your theme by adding it to this block."
+msgstr ""
+
+#: ../../app/frontend/options.php:159
+msgid "Post/Page Comments"
+msgstr ""
+
+#: ../../app/frontend/options.php:160
+msgid "Select if you want to comments on posts and/or pages."
+msgstr ""
+
+#: ../../app/frontend/options.php:163
+msgid "Posts Only"
+msgstr ""
+
+#: ../../app/frontend/options.php:163
+msgid "Pages Only"
+msgstr ""
+
+#: ../../app/frontend/options.php:163
+msgid "Pages / Posts"
+msgstr ""
+
+#: ../../app/frontend/options.php:163 ../../app/frontend/options.php:1391 ../..
+#: app/frontend/integrations/wooslider/wooslider.php:34
+msgid "None"
+msgstr ""
+
+#: ../../app/frontend/options.php:165
+msgid "Post Content"
+msgstr ""
+
+#: ../../app/frontend/options.php:166
+msgid "Select if you want to show the full content or the excerpt on posts."
+msgstr ""
+
+#: ../../app/frontend/options.php:169 ../../app/frontend/options.php:1230 ../..
+#: app/frontend/options.php:1264
+msgid "The Excerpt"
+msgstr ""
+
+#: ../../app/frontend/options.php:169 ../../app/frontend/options.php:1230 ../..
+#: app/frontend/options.php:1264
+msgid "Full Content"
+msgstr ""
+
+#: ../../app/frontend/options.php:171
+msgid "Display Breadcrumbs"
+msgstr ""
+
+#: ../../app/frontend/options.php:172
+msgid "Display dynamic breadcrumbs on each page of your website."
+msgstr ""
+
+#: ../../app/frontend/options.php:177
+msgid "Pagination Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:178
+msgid "Select the style of pagination you would like to use on the blog."
+msgstr ""
+
+#: ../../app/frontend/options.php:181
+msgid "Numbers"
+msgstr ""
+
+#: ../../app/frontend/options.php:181
+msgid "Next/Previous"
+msgstr ""
+
+#: ../../app/frontend/options.php:183
+msgid "Meta"
+msgstr ""
+
+#: ../../app/frontend/options.php:186
+msgid "Meta tags"
+msgstr ""
+
+#: ../../app/frontend/options.php:187
+msgid ""
+"Disables the meta tags which show the current Theme and Framework version in "
+"your site source code."
+msgstr ""
+
+#: ../../app/frontend/options.php:192 ../..
+#: app/frontend/extensions/hooks/classes/hooks.php:636
+msgid "WordPress"
+msgstr ""
+
+#: ../../app/frontend/options.php:195
+msgid "WordPress login logo"
+msgstr ""
+
+#: ../../app/frontend/options.php:196
+msgid "Change the logo image for the WordPress login page."
+msgstr ""
+
+#: ../../app/frontend/options.php:208
+msgid "Styling"
+msgstr ""
+
+#: ../../app/frontend/options.php:212
+msgid "Base Styling"
+msgstr ""
+
+#: ../../app/frontend/options.php:215
+msgid "Disable ALL Custom Styling"
+msgstr ""
+
+#: ../../app/frontend/options.php:216
+msgid ""
+"Disable output of all custom styling (CSS) from the theme options and use "
+"default styles from the stylesheet."
+msgstr ""
+
+#: ../../app/frontend/options.php:228 ../../app/frontend/options.php:813
+msgid "Background Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:229
+msgid "Pick a custom color for site background or add a hex color code e.g. #0278c0"
+msgstr ""
+
+#: ../../app/frontend/options.php:234
+msgid "Background Image"
+msgstr ""
+
+#: ../../app/frontend/options.php:235
+msgid ""
+"Upload a background image, or specify the image address of your image. (http:"
+"//yoursite.com/image.png)"
+msgstr ""
+
+#: ../../app/frontend/options.php:240
+msgid "Background Image Repeat"
+msgstr ""
+
+#: ../../app/frontend/options.php:241 ../../app/frontend/options.php:562 ../..
+#: app/frontend/options.php:612
+msgid "Select how you want your background image to display."
+msgstr ""
+
+#: ../../app/frontend/options.php:246
+msgid "Background image position"
+msgstr ""
+
+#: ../../app/frontend/options.php:247
+msgid "Select how you would like to position the background"
+msgstr ""
+
+#: ../../app/frontend/options.php:253
+msgid "Background Attachment"
+msgstr ""
+
+#: ../../app/frontend/options.php:254
+msgid "Select whether the background should be fixed or move when the user scrolls"
+msgstr ""
+
+#: ../../app/frontend/options.php:260
+msgid "Top Border"
+msgstr ""
+
+#: ../../app/frontend/options.php:261
+msgid "Specify border properties for the top border."
+msgstr ""
+
+#: ../../app/frontend/options.php:269
+msgid "Link Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:270
+msgid "Pick a custom color for links or add a hex color code e.g. #0278c0"
+msgstr ""
+
+#: ../../app/frontend/options.php:275
+msgid "Link Hover Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:276
+msgid "Pick a custom color for links hover or add a hex color code e.g. #0278c0"
+msgstr ""
+
+#: ../../app/frontend/options.php:281
+msgid "Button Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:282
+msgid "Pick a custom color for buttons or add a hex color code e.g. #0278c0"
+msgstr ""
+
+#: ../../app/frontend/options.php:287
+msgid "Button Hover Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:288
+msgid "Pick a custom hover color for buttons or add a hex color code e.g. #0278c0"
+msgstr ""
+
+#: ../../app/frontend/options.php:293
+msgid "General Border Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:294
+msgid ""
+"Pick a custom color for general border colors or add a hex color code e.g. "
+"#0278c0"
+msgstr ""
+
+#: ../../app/frontend/options.php:306 ../../app/frontend/options.php:309
+msgid "Misc Typography"
+msgstr ""
+
+#: ../../app/frontend/options.php:312
+msgid ""
+"The misc typography options below only control typography not covered by "
+"other typography options. You can control specific typography on post title, "
+"post content, widget titles etc. in the other sections in the options panel."
+msgstr ""
+
+#: ../../app/frontend/options.php:315
+msgid "General Text Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:316
+msgid "Select typography for general text."
+msgstr ""
+
+#: ../../app/frontend/options.php:321
+msgid "H1 Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:322
+msgid "Select the typography you want for header H1."
+msgstr ""
+
+#: ../../app/frontend/options.php:327
+msgid "H2 Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:328
+msgid "Select the typography you want for header H2."
+msgstr ""
+
+#: ../../app/frontend/options.php:333
+msgid "H3 Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:334
+msgid "Select the typography you want for header H3."
+msgstr ""
+
+#: ../../app/frontend/options.php:339
+msgid "H4 Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:340
+msgid "Select the typography you want for header H4."
+msgstr ""
+
+#: ../../app/frontend/options.php:345
+msgid "H5 Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:346
+msgid "Select the typography you want for header H5."
+msgstr ""
+
+#: ../../app/frontend/options.php:351
+msgid "H6 Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:352
+msgid "Select the typography you want for header H6."
+msgstr ""
+
+#: ../../app/frontend/options.php:364 ../../app/frontend/options.php:1985 ../..
+#: app/frontend/options.php:2044
+msgid "Layout"
+msgstr ""
+
+#: ../../app/frontend/options.php:368
+msgid "Layout General Settings"
+msgstr ""
+
+#: ../../app/frontend/options.php:371
+msgid "Site Width"
+msgstr ""
+
+#: ../../app/frontend/options.php:380
+msgid "Main Layout"
+msgstr ""
+
+#: ../../app/frontend/options.php:381 ../../app/frontend/options.php:1466 ../..
+#: app/frontend/options.php:1935 ../../app/frontend/options.php:1949
+msgid ""
+"Select main content and sidebar alignment. Choose between 1, 2 or 3 column "
+"layout."
+msgstr ""
+
+#: ../../app/frontend/options.php:394
+msgid "Main Content Padding"
+msgstr ""
+
+#: ../../app/frontend/options.php:395 ../../app/frontend/options.php:421
+msgid "Enter an value (in em) for the desired padding."
+msgstr ""
+
+#: ../../app/frontend/options.php:402 ../../app/frontend/options.php:428 ../..
+#: app/frontend/options.php:495 ../../app/frontend/options.php:632 ../..
+#: app/frontend/options.php:649 ../../app/frontend/options.php:883
+msgid "Top"
+msgstr ""
+
+#: ../../app/frontend/options.php:407 ../../app/frontend/options.php:433 ../..
+#: app/frontend/options.php:654 ../../app/frontend/options.php:1391 ../..
+#: app/frontend/widgets/blogauthor.php:189
+msgid "Right"
+msgstr ""
+
+#: ../../app/frontend/options.php:412 ../../app/frontend/options.php:438 ../..
+#: app/frontend/options.php:499 ../../app/frontend/options.php:637 ../..
+#: app/frontend/options.php:659 ../../app/frontend/options.php:888 ../..
+#: app/frontend/options.php:1391
+msgid "Bottom"
+msgstr ""
+
+#: ../../app/frontend/options.php:417 ../../app/frontend/options.php:443 ../..
+#: app/frontend/options.php:664 ../../app/frontend/options.php:1391 ../..
+#: app/frontend/widgets/blogauthor.php:188
+msgid "Left"
+msgstr ""
+
+#: ../../app/frontend/options.php:420
+msgid "Main Content Mobile Padding"
+msgstr ""
+
+#: ../../app/frontend/options.php:446
+msgid "Footer Widget Areas"
+msgstr ""
+
+#: ../../app/frontend/options.php:447
+msgid "Select how many footer widget areas you want to display."
+msgstr ""
+
+#: ../../app/frontend/options.php:459
+msgid "Enable Fixed Mobile Layout"
+msgstr ""
+
+#: ../../app/frontend/options.php:460
+msgid ""
+"Layout is responsive, meaning it adapts its layout on mobile devices. "
+"Enabling Fixed Layout will remove the responsive layout on mobile devices."
+msgstr ""
+
+#: ../../app/frontend/options.php:472
+msgid "Boxed Layout"
+msgstr ""
+
+#: ../../app/frontend/options.php:475
+msgid "Boxed Layout Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:476
+msgid "Enable the boxed layout style."
+msgstr ""
+
+#: ../../app/frontend/options.php:481
+msgid "Box Background Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:482
+msgid ""
+"Pick a custom color for the boxed background or add a hex color code e.g. "
+"#ffffff"
+msgstr ""
+
+#: ../../app/frontend/options.php:487
+msgid "Box Margin"
+msgstr ""
+
+#: ../../app/frontend/options.php:488
+msgid "Enter an integer value i.e. 20 for the desired top and bottom margin."
+msgstr ""
+
+#: ../../app/frontend/options.php:502
+msgid "Box Border Top/Bottom"
+msgstr ""
+
+#: ../../app/frontend/options.php:503 ../../app/frontend/options.php:509
+msgid "Specify border properties for the boxed layout."
+msgstr ""
+
+#: ../../app/frontend/options.php:508
+msgid "Box Border Left/Right"
+msgstr ""
+
+#: ../../app/frontend/options.php:514
+msgid "Box Rounded Corners"
+msgstr ""
+
+#: ../../app/frontend/options.php:515 ../../app/frontend/options.php:732 ../..
+#: app/frontend/options.php:868 ../../app/frontend/options.php:985 ../..
+#: app/frontend/options.php:1106
+msgid ""
+"Set amount of pixels for border radius (rounded corners). Will only show in "
+"CSS3 compatible browser."
+msgstr ""
+
+#: ../../app/frontend/options.php:521
+msgid "Box Shadow"
+msgstr ""
+
+#: ../../app/frontend/options.php:522
+msgid "Enable box shadow. Will only show in CSS3 compatible browser."
+msgstr ""
+
+#: ../../app/frontend/options.php:534 ../../app/frontend/options.php:537
+msgid "Full Width Layout"
+msgstr ""
+
+#: ../../app/frontend/options.php:540
+msgid ""
+"Below you can enable full width header and footer areas and set the "
+"background. You can set the styling options for the full width navigation "
+"under the Primary Navigation options. Please note that Boxed Layout must be "
+"disabled."
+msgstr ""
+
+#: ../../app/frontend/options.php:543
+msgid "Enable Full Width Header"
+msgstr ""
+
+#: ../../app/frontend/options.php:544
+msgid "Set header container to display full width."
+msgstr ""
+
+#: ../../app/frontend/options.php:550
+msgid "Select the background color you want for your full width header."
+msgstr ""
+
+#: ../../app/frontend/options.php:555 ../../app/frontend/options.php:605
+msgid "Header Background Image"
+msgstr ""
+
+#: ../../app/frontend/options.php:556 ../../app/frontend/options.php:606
+msgid ""
+"Upload a background image, or specify the image address of your image (http:"
+"//yoursite.com/image.png). <br/>Image should be same width as your site "
+"width."
+msgstr ""
+
+#: ../../app/frontend/options.php:561 ../../app/frontend/options.php:611
+msgid "Header Background Image Repeat"
+msgstr ""
+
+#: ../../app/frontend/options.php:567
+msgid "Enable Full Width Footer"
+msgstr ""
+
+#: ../../app/frontend/options.php:568
+msgid "Set footer widget area and footer container to display full width."
+msgstr ""
+
+#: ../../app/frontend/options.php:573 ../../app/frontend/options.php:1052
+msgid "Footer Widget Area Background Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:574
+msgid "Select the background color you want for your full width widget area."
+msgstr ""
+
+#: ../../app/frontend/options.php:579
+msgid "Footer Background Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:580
+msgid "Select the background color you want for your full width footer."
+msgstr ""
+
+#: ../../app/frontend/options.php:600
+msgid ""
+"Pick a custom color for header background or add a hex color code e.g. "
+"#0278c0"
+msgstr ""
+
+#: ../../app/frontend/options.php:618
+msgid "Specify border properties for the header."
+msgstr ""
+
+#: ../../app/frontend/options.php:623
+msgid "Header Margin"
+msgstr ""
+
+#: ../../app/frontend/options.php:624
+msgid "Enter an integer value i.e. 20 for the desired margin."
+msgstr ""
+
+#: ../../app/frontend/options.php:640
+msgid "Header Padding"
+msgstr ""
+
+#: ../../app/frontend/options.php:641
+msgid "Enter an integer value i.e. 20 for the desired padding."
+msgstr ""
+
+#: ../../app/frontend/options.php:667
+msgid "Site Title Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:668
+msgid "Select typography for site title."
+msgstr ""
+
+#: ../../app/frontend/options.php:673
+msgid "Site Description Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:674
+msgid "Select typography for site description."
+msgstr ""
+
+#: ../../app/frontend/options.php:686
+msgid "Footer"
+msgstr ""
+
+#: ../../app/frontend/options.php:689
+msgid "Footer Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:690
+msgid "Select typography for footer."
+msgstr ""
+
+#: ../../app/frontend/options.php:695
+msgid "Footer Link Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:696
+msgid "Pick a custom color for footer links or add a hex color code e.g. #0278c0"
+msgstr ""
+
+#: ../../app/frontend/options.php:701
+msgid "Footer Link Hover Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:702
+msgid ""
+"Pick a custom color for footer links hover or add a hex color code e.g. "
+"#0278c0"
+msgstr ""
+
+#: ../../app/frontend/options.php:707
+msgid "Footer Background"
+msgstr ""
+
+#: ../../app/frontend/options.php:708
+msgid "Select the background color you want for your footer."
+msgstr ""
+
+#: ../../app/frontend/options.php:713
+msgid "Footer Border Top"
+msgstr ""
+
+#: ../../app/frontend/options.php:714
+msgid "Specify top border properties for the footer."
+msgstr ""
+
+#: ../../app/frontend/options.php:719
+msgid "Footer Border Bottom"
+msgstr ""
+
+#: ../../app/frontend/options.php:720
+msgid "Specify bottom border properties for the footer."
+msgstr ""
+
+#: ../../app/frontend/options.php:725
+msgid "Footer Border Left/Right"
+msgstr ""
+
+#: ../../app/frontend/options.php:726
+msgid "Specify left/right border properties for the footer."
+msgstr ""
+
+#: ../../app/frontend/options.php:731
+msgid "Footer Rounded Corners"
+msgstr ""
+
+#: ../../app/frontend/options.php:737
+msgid "Enable Custom Footer (Left)"
+msgstr ""
+
+#: ../../app/frontend/options.php:738 ../../app/frontend/options.php:752
+msgid "Activate to add the custom text below to the theme footer."
+msgstr ""
+
+#: ../../app/frontend/options.php:744
+msgid "Custom Text (Left)"
+msgstr ""
+
+#: ../../app/frontend/options.php:745 ../../app/frontend/options.php:759
+msgid "Custom HTML and Text that will appear in the footer of your theme."
+msgstr ""
+
+#: ../../app/frontend/options.php:751
+msgid "Enable Custom Footer (Right)"
+msgstr ""
+
+#: ../../app/frontend/options.php:758
+msgid "Custom Text (Right)"
+msgstr ""
+
+#: ../../app/frontend/options.php:780
+#, php-format
+msgid ""
+"Pick a custom color for the top navigation background or add a hex color "
+"code e.g. #000.<br />Top Navigation can be added with <a href=\"%s\">WP "
+"Menus</a>"
+msgstr ""
+
+#: ../../app/frontend/options.php:785
+msgid "Top Navigation - Hover / Sub Menu Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:786
+msgid ""
+"Pick a custom color for the top navigation hover text color or add a hex "
+"color code e.g. #000"
+msgstr ""
+
+#: ../../app/frontend/options.php:791
+msgid "Top Navigation - Hover / Sub Menu Background Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:792
+msgid ""
+"Pick a custom color for the top navigation hover background color or add a "
+"hex color code e.g. #000"
+msgstr ""
+
+#: ../../app/frontend/options.php:797
+msgid "Top Navigation Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:798 ../../app/frontend/options.php:820
+msgid "Select typography for navigation."
+msgstr ""
+
+#: ../../app/frontend/options.php:810
+msgid "Primary Navigation"
+msgstr ""
+
+#: ../../app/frontend/options.php:814
+msgid ""
+"Pick a custom color for the navigation background or add a hex color code e."
+"g. #cccccc"
+msgstr ""
+
+#: ../../app/frontend/options.php:819
+msgid "Navigation Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:825
+msgid "Hover / Sub Menu Text Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:826
+msgid ""
+"Pick a custom color for the navigation hover / sub menu text color or add a "
+"hex color code e.g. #eeeeee"
+msgstr ""
+
+#: ../../app/frontend/options.php:831
+msgid "Hover / Sub Menu Background Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:832
+msgid ""
+"Pick a custom color for the navigation hover / sub menu background color or "
+"add a hex color code e.g. #eeeeee"
+msgstr ""
+
+#: ../../app/frontend/options.php:837
+msgid "Divider"
+msgstr ""
+
+#: ../../app/frontend/options.php:838
+msgid "Specify border properties for the menu items dividers."
+msgstr ""
+
+#: ../../app/frontend/options.php:843
+msgid "Dropdown menu border"
+msgstr ""
+
+#: ../../app/frontend/options.php:844
+msgid "Specify border properties for the navigation dropdown menu."
+msgstr ""
+
+#: ../../app/frontend/options.php:849
+msgid "Border Top"
+msgstr ""
+
+#: ../../app/frontend/options.php:850 ../../app/frontend/options.php:856 ../..
+#: app/frontend/options.php:862 ../../app/frontend/options.php:979
+msgid "Specify border properties for the navigation."
+msgstr ""
+
+#: ../../app/frontend/options.php:855
+msgid "Border Bottom"
+msgstr ""
+
+#: ../../app/frontend/options.php:861
+msgid "Border Left/Right"
+msgstr ""
+
+#: ../../app/frontend/options.php:867
+msgid "Navigation Rounded Corners"
+msgstr ""
+
+#: ../../app/frontend/options.php:874
+msgid "Navigation Margin Top/Bottom"
+msgstr ""
+
+#: ../../app/frontend/options.php:875
+msgid "Enter an integer value i.e. 20 for the desired header margin."
+msgstr ""
+
+#: ../../app/frontend/options.php:891
+msgid "Enable Subscribe Icon"
+msgstr ""
+
+#: ../../app/frontend/options.php:892
+msgid "Enable the Subscribe to RSS icon in right navigation."
+msgstr ""
+
+#: ../../app/frontend/options.php:897
+msgid "Enable E-mail Icon"
+msgstr ""
+
+#: ../../app/frontend/options.php:898
+msgid "Enter an URL for the mail icon in the right navigation"
+msgstr ""
+
+#: ../../app/frontend/options.php:903
+msgid "Enable Search"
+msgstr ""
+
+#: ../../app/frontend/options.php:904
+msgid "Enable Search in the right navigation."
+msgstr ""
+
+#: ../../app/frontend/options.php:917 ../../app/frontend/options.php:1482
+msgid "Posts"
+msgstr ""
+
+#: ../../app/frontend/options.php:921
+msgid "Posts / Pages"
+msgstr ""
+
+#: ../../app/frontend/options.php:924
+msgid "Post/Page Title Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:925
+msgid "Specify typography for post/page title text."
+msgstr ""
+
+#: ../../app/frontend/options.php:930
+msgid "Post Meta Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:931
+msgid "Specify typography for post meta."
+msgstr ""
+
+#: ../../app/frontend/options.php:936
+msgid "Post/Page Text Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:937
+msgid "Specify typography for post/page content text."
+msgstr ""
+
+#: ../../app/frontend/options.php:942
+msgid "Post More (bottom) Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:943
+msgid "Specify typography for post bottom text."
+msgstr ""
+
+#: ../../app/frontend/options.php:948
+msgid "Post More (bottom) Border Top"
+msgstr ""
+
+#: ../../app/frontend/options.php:949 ../../app/frontend/options.php:955
+msgid "Specify border properties for post more section."
+msgstr ""
+
+#: ../../app/frontend/options.php:954
+msgid "Post More (bottom) Border Bottom"
+msgstr ""
+
+#: ../../app/frontend/options.php:960
+msgid "Post Author Background Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:961
+msgid ""
+"Pick a custom background color for the post author section or add a hex "
+"color code e.g. #fafafa"
+msgstr ""
+
+#: ../../app/frontend/options.php:966
+msgid "Post Author Border Top"
+msgstr ""
+
+#: ../../app/frontend/options.php:967 ../../app/frontend/options.php:973
+msgid "Specify border properties for post author section."
+msgstr ""
+
+#: ../../app/frontend/options.php:972
+msgid "Post Author Border Bottom"
+msgstr ""
+
+#: ../../app/frontend/options.php:978
+msgid "Post Author Border Left/Right"
+msgstr ""
+
+#: ../../app/frontend/options.php:984
+msgid "Post Author Rounded Corners"
+msgstr ""
+
+#: ../../app/frontend/options.php:992
+msgid "Disable post author below post?"
+msgstr ""
+
+#: ../../app/frontend/options.php:997
+msgid "Comments Background Color (even threads)"
+msgstr ""
+
+#: ../../app/frontend/options.php:998
+msgid ""
+"Pick a custom background color for the post comments even threads or add a "
+"hex color code e.g. #fafafa"
+msgstr ""
+
+#: ../../app/frontend/options.php:1003
+msgid "Page Navigation Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:1004
+msgid "Select typography for Page Navigation text."
+msgstr ""
+
+#: ../../app/frontend/options.php:1009
+msgid "Page Navigation Background Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:1010
+msgid ""
+"Pick a custom color for the Page Navigation background or add a hex color "
+"code e.g. #fafafa"
+msgstr ""
+
+#: ../../app/frontend/options.php:1015
+msgid "Page Navigation Border Top"
+msgstr ""
+
+#: ../../app/frontend/options.php:1016 ../../app/frontend/options.php:1022
+msgid "Specify border properties for Page Navigation section."
+msgstr ""
+
+#: ../../app/frontend/options.php:1021
+msgid "Page Navigation Border Bottom"
+msgstr ""
+
+#: ../../app/frontend/options.php:1027
+msgid "Archives"
+msgstr ""
+
+#: ../../app/frontend/options.php:1030
+msgid "Archive Header Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:1031
+msgid "Select typography for Archive header."
+msgstr ""
+
+#: ../../app/frontend/options.php:1036
+msgid "Archive Header Border Bottom"
+msgstr ""
+
+#: ../../app/frontend/options.php:1037
+msgid "Specify border properties for Archive header"
+msgstr ""
+
+#: ../../app/frontend/options.php:1042
+msgid "Disable Archive Header RSS link"
+msgstr ""
+
+#: ../../app/frontend/options.php:1043
+msgid "Disable RSS link in Archive header"
+msgstr ""
+
+#: ../../app/frontend/options.php:1048
+msgid "Widgets"
+msgstr ""
+
+#: ../../app/frontend/options.php:1053 ../../app/frontend/options.php:1059
+msgid "Pick a custom color for the background or add a hex color code e.g. #cccccc"
+msgstr ""
+
+#: ../../app/frontend/options.php:1058
+msgid "Widget Background Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:1064
+msgid "Widget Border"
+msgstr ""
+
+#: ../../app/frontend/options.php:1065
+msgid "Specify border properties for widgets."
+msgstr ""
+
+#: ../../app/frontend/options.php:1070
+msgid "Widget Padding"
+msgstr ""
+
+#: ../../app/frontend/options.php:1071
+msgid "Enter an integer value i.e. 20 for the desired widget padding."
+msgstr ""
+
+#: ../../app/frontend/options.php:1079
+msgid "Top/Bottom"
+msgstr ""
+
+#: ../../app/frontend/options.php:1084
+msgid "Left/Right"
+msgstr ""
+
+#: ../../app/frontend/options.php:1087
+msgid "Widget Title"
+msgstr ""
+
+#: ../../app/frontend/options.php:1088
+msgid "Select the typography you want for the widget title."
+msgstr ""
+
+#: ../../app/frontend/options.php:1093
+msgid "Widget Title Bottom Border"
+msgstr ""
+
+#: ../../app/frontend/options.php:1094
+msgid "Specify border property for the widget title."
+msgstr ""
+
+#: ../../app/frontend/options.php:1099
+msgid "Widget Text"
+msgstr ""
+
+#: ../../app/frontend/options.php:1100 ../../app/frontend/options.php:1124 ../..
+#: app/frontend/options.php:1130
+msgid "Select the typography you want for the widget text."
+msgstr ""
+
+#: ../../app/frontend/options.php:1105
+msgid "Widget Rounded Corners"
+msgstr ""
+
+#: ../../app/frontend/options.php:1111
+msgid "Tabs Widget Background color"
+msgstr ""
+
+#: ../../app/frontend/options.php:1112 ../../app/frontend/options.php:1118
+msgid "Pick a custom color for the tabs widget or add a hex color code e.g. #cccccc"
+msgstr ""
+
+#: ../../app/frontend/options.php:1117
+msgid "Tabs Widget Inside Background Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:1123
+msgid "Tabs Widget Title"
+msgstr ""
+
+#: ../../app/frontend/options.php:1129
+msgid "Tabs Widget Meta / Tabber Font"
+msgstr ""
+
+#: ../../app/frontend/options.php:1142
+msgid "Magazine Template"
+msgstr ""
+
+#: ../../app/frontend/options.php:1147
+msgid "Posts Slider"
+msgstr ""
+
+#: ../../app/frontend/options.php:1150
+msgid "Magazine Page Template"
+msgstr ""
+
+#: ../../app/frontend/options.php:1153
+#, php-format
+msgid ""
+"Below you can control settings for the Magazine page template. Please refer "
+"to <a href=\"%s\">documentation</a> on how to setup the page template."
+msgstr ""
+
+#: ../../app/frontend/options.php:1156
+msgid "Enable Featured Slider"
+msgstr ""
+
+#: ../../app/frontend/options.php:1157
+msgid "Enable the featured slider on the \"Magazine\" page template."
+msgstr ""
+
+#: ../../app/frontend/options.php:1162
+msgid "Post Tag(s)"
+msgstr ""
+
+#: ../../app/frontend/options.php:1163
+msgid ""
+"Add comma separated list for the tags that you would like to have displayed "
+"in the featured slider on the \"Magazine\" page template. For example, if you "
+"add \"tag1, tag3\" here, then all posts tagged with either \"tag1\" or \"tag3\" "
+"will be shown in the featured area. These posts will be excluded from normal "
+"posts below slider."
+msgstr ""
+
+#: ../../app/frontend/options.php:1168
+msgid "Number Of Posts To Display"
+msgstr ""
+
+#: ../../app/frontend/options.php:1169
+msgid "Select the number of entries that should appear in the Featured Slider."
+msgstr ""
+
+#: ../../app/frontend/options.php:1175
+msgid "Exclude Posts"
+msgstr ""
+
+#: ../../app/frontend/options.php:1176
+msgid "Exclude the slider posts from the posts grid below slider."
+msgstr ""
+
+#: ../../app/frontend/options.php:1181
+msgid "Display The Post Titles"
+msgstr ""
+
+#: ../../app/frontend/options.php:1182
+msgid "Show the post title in the \"Posts\" slider."
+msgstr ""
+
+#: ../../app/frontend/options.php:1188
+msgid "Title Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:1189
+msgid "Select typography for title."
+msgstr ""
+
+#: ../../app/frontend/options.php:1195
+msgid "Display The Post Excerpts"
+msgstr ""
+
+#: ../../app/frontend/options.php:1196
+msgid "Show the post excerpt in the \"Posts\" slider."
+msgstr ""
+
+#: ../../app/frontend/options.php:1202
+msgid "Excerpt Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:1203
+msgid "Select typography for excerpt text."
+msgstr ""
+
+#: ../../app/frontend/options.php:1209
+msgid "Excerpt Length"
+msgstr ""
+
+#: ../../app/frontend/options.php:1210
+msgid "Total number of words to show in the excerpt."
+msgstr ""
+
+#: ../../app/frontend/options.php:1216
+msgid "Featured Posts"
+msgstr ""
+
+#: ../../app/frontend/options.php:1219
+msgid "Number Of Featured Posts"
+msgstr ""
+
+#: ../../app/frontend/options.php:1220
+msgid ""
+"Select how many featured (full width) posts you would like to show before "
+"your two-column posts. Set total number of posts in Settings > Reading."
+msgstr ""
+
+#: ../../app/frontend/options.php:1225
+msgid "Post Content for \"Featured\" Posts"
+msgstr ""
+
+#: ../../app/frontend/options.php:1226
+msgid ""
+"Select if you want to show the full content or the excerpt on posts in the "
+"\"Featured\" section."
+msgstr ""
+
+#: ../../app/frontend/options.php:1232
+msgid "Featured Image Dimensions"
+msgstr ""
+
+#: ../../app/frontend/options.php:1233 ../../app/frontend/options.php:1273 ../..
+#: app/frontend/options.php:1629
+msgid "Enter an integer value i.e. 250 for the image size."
+msgstr ""
+
+#: ../../app/frontend/options.php:1241 ../../app/frontend/options.php:1281 ../..
+#: app/frontend/options.php:1607 ../../app/frontend/options.php:1637
+msgid "Width"
+msgstr ""
+
+#: ../../app/frontend/options.php:1246 ../../app/frontend/options.php:1286 ../..
+#: app/frontend/options.php:1612 ../../app/frontend/options.php:1642
+msgid "Height"
+msgstr ""
+
+#: ../../app/frontend/options.php:1249
+msgid "Featured Post Image Alignment"
+msgstr ""
+
+#: ../../app/frontend/options.php:1250
+msgid "Select how to align your featured post images."
+msgstr ""
+
+#: ../../app/frontend/options.php:1256
+msgid "Posts Grid"
+msgstr ""
+
+#: ../../app/frontend/options.php:1259
+msgid "Post Content for \"Grid\" Posts"
+msgstr ""
+
+#: ../../app/frontend/options.php:1260
+msgid ""
+"Select if you want to show the full content or the excerpt on posts in the "
+"\"Grid\" section."
+msgstr ""
+
+#: ../../app/frontend/options.php:1266
+msgid "Post Title Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:1267
+msgid "Specify typography for post title."
+msgstr ""
+
+#: ../../app/frontend/options.php:1272
+msgid "Post Image Dimensions"
+msgstr ""
+
+#: ../../app/frontend/options.php:1289
+msgid "Post Image Alignment"
+msgstr ""
+
+#: ../../app/frontend/options.php:1290
+msgid "Select how to align your normal post images."
+msgstr ""
+
+#: ../../app/frontend/options.php:1303
+msgid "Business Template"
+msgstr ""
+
+#: ../../app/frontend/options.php:1307
+msgid "\"Business\" Setup"
+msgstr ""
+
+#: ../../app/frontend/options.php:1310
+msgid "Business Page Template"
+msgstr ""
+
+#: ../../app/frontend/options.php:1313
+#, php-format
+msgid ""
+"Below you can control settings for the Business page template. Please refer "
+"to <a href=\"%s\">documentation</a> on how to setup the page template. You can "
+"add slider posts with the <strong><em>Slides</em></strong> custom post type."
+msgstr ""
+
+#: ../../app/frontend/options.php:1316
+msgid "Disable Footer Widgets"
+msgstr ""
+
+#: ../../app/frontend/options.php:1317
+msgid "Disable the footer widgets on this template."
+msgstr ""
+
+#: ../../app/frontend/options.php:1322
+msgid "Disable Slides Admin Menu"
+msgstr ""
+
+#: ../../app/frontend/options.php:1323
+msgid "Disable the slides admin menu functionality."
+msgstr ""
+
+#: ../../app/frontend/options.php:1328 ../../app/frontend/options.php:1331
+msgid "Featured Slider"
+msgstr ""
+
+#: ../../app/frontend/options.php:1332
+msgid "Enable the featured slider."
+msgstr ""
+
+#: ../../app/frontend/options.php:1337
+msgid "Full Width Slider"
+msgstr ""
+
+#: ../../app/frontend/options.php:1338
+msgid "Enable the slider to be full width."
+msgstr ""
+
+#: ../../app/frontend/options.php:1343
+msgid "Number of Slides"
+msgstr ""
+
+#: ../../app/frontend/options.php:1344
+msgid "Select how many slides you would like to show in the slider."
+msgstr ""
+
+#: ../../app/frontend/options.php:1351 ../../app/frontend/options.php:2032
+msgid "Slide Group"
+msgstr ""
+
+#: ../../app/frontend/options.php:1352
+msgid "Optionally choose to display only slides from a specific slide group."
+msgstr ""
+
+#: ../../app/frontend/options.php:1359
+msgid "Display Order"
+msgstr ""
+
+#: ../../app/frontend/options.php:1360
+msgid "Select the order in which you want to show your slides."
+msgstr ""
+
+#: ../../app/frontend/options.php:1364
+msgid "Newest first"
+msgstr ""
+
+#: ../../app/frontend/options.php:1364
+msgid "Oldest first"
+msgstr ""
+
+#: ../../app/frontend/options.php:1366
+msgid "Featured Slider Title"
+msgstr ""
+
+#: ../../app/frontend/options.php:1367
+msgid "Show the page title in slider when using Featured Image as background image."
+msgstr ""
+
+#: ../../app/frontend/options.php:1373
+msgid "Featured Slider Title Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:1374
+msgid "Select typography for title (when using image background)."
+msgstr ""
+
+#: ../../app/frontend/options.php:1380
+msgid "Featured Slider Content Font Style"
+msgstr ""
+
+#: ../../app/frontend/options.php:1381
+msgid "Select typography for content text (when using image background)."
+msgstr ""
+
+#: ../../app/frontend/options.php:1386
+msgid "Featured Slider Content Overlay"
+msgstr ""
+
+#: ../../app/frontend/options.php:1387
+msgid ""
+"Select the position of the slider content overlay which is shown when using "
+"a featured image in the slide post."
+msgstr ""
+
+#: ../../app/frontend/options.php:1391 ../..
+#: app/frontend/integrations/wooslider/wooslider.php:36
+msgid "Center"
+msgstr ""
+
+#: ../../app/frontend/options.php:1391 ../..
+#: app/frontend/integrations/wooslider/wooslider.php:35
+msgid "Full"
+msgstr ""
+
+#: ../../app/frontend/options.php:1400 ../../app/frontend/options.php:1404
+msgid "Slider Settings"
+msgstr ""
+
+#: ../../app/frontend/options.php:1407
+msgid ""
+"Below you can control the generic slider settings which will apply to both "
+"Business and Magazine templates."
+msgstr ""
+
+#: ../../app/frontend/options.php:1410
+msgid "Auto Start"
+msgstr ""
+
+#: ../../app/frontend/options.php:1411
+msgid ""
+"Set the slider to start sliding automatically. Adjust the speed of sliding "
+"underneath."
+msgstr ""
+
+#: ../../app/frontend/options.php:1416
+msgid "Hover Pause"
+msgstr ""
+
+#: ../../app/frontend/options.php:1417
+msgid "Hovering over slideshow will pause it"
+msgstr ""
+
+#: ../../app/frontend/options.php:1422
+msgid "Animation Speed"
+msgstr ""
+
+#: ../../app/frontend/options.php:1423
+msgid "The time in <b>seconds</b> the animation between frames will take e.g. 0.6"
+msgstr ""
+
+#: ../../app/frontend/options.php:1429
+msgid "Auto Slide Interval"
+msgstr ""
+
+#: ../../app/frontend/options.php:1430
+msgid ""
+"The time in <b>seconds</b> each slide pauses for, before sliding to the next."
+" Only when using Auto Start option above."
+msgstr ""
+
+#: ../../app/frontend/options.php:1436
+msgid "Features Slider Effect"
+msgstr ""
+
+#: ../../app/frontend/options.php:1437
+msgid ""
+"Select the effect used when transitioning between posts (default: "
+"<strong>slide</strong>)."
+msgstr ""
+
+#: ../../app/frontend/options.php:1442
+msgid "Slide"
+msgstr ""
+
+#: ../../app/frontend/options.php:1443
+msgid "Fade"
+msgstr ""
+
+#: ../../app/frontend/options.php:1446
+msgid "Slider Pagination"
+msgstr ""
+
+#: ../../app/frontend/options.php:1447
+msgid "Enable/disable the display of pagination in the sliders."
+msgstr ""
+
+#: ../../app/frontend/options.php:1465
+msgid "WooCommerce Page Layout"
+msgstr ""
+
+#: ../../app/frontend/options.php:1478
+msgid "Search scope"
+msgstr ""
+
+#: ../../app/frontend/options.php:1479
+msgid "Select whether you want the search widget to search for products or posts"
+msgstr ""
+
+#: ../../app/frontend/options.php:1482 ../../templates/template-sitemap.php:67
+msgid "Products"
+msgstr ""
+
+#: ../../app/frontend/options.php:1484
+msgid "Custom Placeholder"
+msgstr ""
+
+#: ../../app/frontend/options.php:1485
+msgid "Upload a custom placeholder to be displayed when there is no product image."
+msgstr ""
+
+#: ../../app/frontend/options.php:1490
+msgid "Header Cart Link"
+msgstr ""
+
+#: ../../app/frontend/options.php:1491
+msgid "Display a link to the cart in the main navigation"
+msgstr ""
+
+#: ../../app/frontend/options.php:1496
+msgid "Header Cart Totals"
+msgstr ""
+
+#: ../../app/frontend/options.php:1497
+msgid "Display item and amount totals in the cart in the main navigation"
+msgstr ""
+
+#: ../../app/frontend/options.php:1502
+msgid "Shop page"
+msgstr ""
+
+#: ../../app/frontend/options.php:1505
+msgid "Add to Cart"
+msgstr ""
+
+#: ../../app/frontend/options.php:1506
+msgid "Removes \"Add to Cart\" button to \"Go to Product\" in the shop page"
+msgstr ""
+
+#: ../../app/frontend/options.php:1511
+msgid "Orderby Dropdown"
+msgstr ""
+
+#: ../../app/frontend/options.php:1512
+msgid "Removes the Orderby Dropdown"
+msgstr ""
+
+#: ../../app/frontend/options.php:1517
+msgid "Showing Results"
+msgstr ""
+
+#: ../../app/frontend/options.php:1518
+msgid "Removes showing results product page"
+msgstr ""
+
+#: ../../app/frontend/options.php:1523
+msgid "Product page"
+msgstr ""
+
+#: ../../app/frontend/options.php:1526
+msgid "Product Meta"
+msgstr ""
+
+#: ../../app/frontend/options.php:1527
+msgid "Remove product meta single page"
+msgstr ""
+
+#: ../../app/frontend/options.php:1532
+msgid "Product Data Tabs"
+msgstr ""
+
+#: ../../app/frontend/options.php:1533
+msgid "Remove product data tabs from singel product page"
+msgstr ""
+
+#: ../../app/frontend/options.php:1538
+msgid "Product Related"
+msgstr ""
+
+#: ../../app/frontend/options.php:1539
+msgid "Remove product related from singel product page"
+msgstr ""
+
+#: ../../app/frontend/options.php:1552
+msgid "Media Settings"
+msgstr ""
+
+#: ../../app/frontend/options.php:1556 ../../app/frontend/options.php:1559
+msgid "Image Placeholder"
+msgstr ""
+
+#: ../../app/frontend/options.php:1560
+msgid ""
+"Specify  a default image placeholder for your thumbnails, to use within the "
+"sf_image() function."
+msgstr ""
+
+#: ../../app/frontend/options.php:1565
+msgid "Resizer Settings"
+msgstr ""
+
+#: ../../app/frontend/options.php:1568
+msgid "WP Post Thumbnail"
+msgstr ""
+
+#: ../../app/frontend/options.php:1569
+msgid ""
+"Use WordPress post thumbnail to assign a post thumbnail. Will enable the "
+"<strong>Featured Image panel</strong> in your post sidebar where you can "
+"assign a post thumbnail."
+msgstr ""
+
+#: ../../app/frontend/options.php:1575
+msgid "WP Post Thumbnail - Dynamic Image Resizing"
+msgstr ""
+
+#: ../../app/frontend/options.php:1576
+msgid ""
+"The post thumbnail will be dynamically resized using native WP resize "
+"functionality. <em>(Requires PHP 5.2+)</em>"
+msgstr ""
+
+#: ../../app/frontend/options.php:1582
+msgid "WP Post Thumbnail - Hard Crop"
+msgstr ""
+
+#: ../../app/frontend/options.php:1583
+msgid ""
+"The post thumbnail will be cropped to match the target aspect ratio (only "
+"used if <em>Dynamic Image Resizing</em> is enabled)."
+msgstr ""
+
+#: ../../app/frontend/options.php:1589
+msgid "Automatic Image Thumbnail"
+msgstr ""
+
+#: ../../app/frontend/options.php:1590
+msgid ""
+"If no thumbnail is specified then the first uploaded image in the post is "
+"used."
+msgstr ""
+
+#: ../../app/frontend/options.php:1595
+msgid "Thumbnail Settings"
+msgstr ""
+
+#: ../../app/frontend/options.php:1598
+msgid "Thumbnail Dimensions"
+msgstr ""
+
+#: ../../app/frontend/options.php:1599
+msgid ""
+"Enter an integer value i.e. 250 for the desired size which will be used when "
+"dynamically creating the images."
+msgstr ""
+
+#: ../../app/frontend/options.php:1615
+msgid "Thumbnail Alignment"
+msgstr ""
+
+#: ../../app/frontend/options.php:1616
+msgid "Select how to align your thumbnails with posts."
+msgstr ""
+
+#: ../../app/frontend/options.php:1622
+msgid "Single Post - Show Thumbnail"
+msgstr ""
+
+#: ../../app/frontend/options.php:1623
+msgid "Show the thumbnail in the single post page."
+msgstr ""
+
+#: ../../app/frontend/options.php:1628
+msgid "Single Post - Thumbnail Dimensions"
+msgstr ""
+
+#: ../../app/frontend/options.php:1645
+msgid "Single Post - Thumbnail Alignment"
+msgstr ""
+
+#: ../../app/frontend/options.php:1646
+msgid "Select how to align your thumbnails with single posts."
+msgstr ""
+
+#: ../../app/frontend/options.php:1653
+msgid "Add Featured Image to RSS feed"
+msgstr ""
+
+#: ../../app/frontend/options.php:1654
+msgid "Add the featured image to your RSS feed"
+msgstr ""
+
+#: ../../app/frontend/options.php:1659
+msgid "Enable Lightbox"
+msgstr ""
+
+#: ../../app/frontend/options.php:1660
+msgid ""
+"Enable the PrettyPhoto lightbox script on images within your website's "
+"content."
+msgstr ""
+
+#: ../../app/frontend/options.php:1672
+msgid "Subscribe & Connect"
+msgstr ""
+
+#: ../../app/frontend/options.php:1676
+msgid "S&C Setup"
+msgstr ""
+
+#: ../../app/frontend/options.php:1679
+msgid "Enable Subscribe & Connect - Single Post"
+msgstr ""
+
+#: ../../app/frontend/options.php:1680
+#, php-format
+msgid ""
+"Enable the subscribe & connect area on single posts. You can also add this "
+"as a <a href=\"%s\">widget</a> in your sidebar."
+msgstr ""
+
+#: ../../app/frontend/options.php:1685
+msgid "Subscribe Title"
+msgstr ""
+
+#: ../../app/frontend/options.php:1686
+msgid "Enter the title to show in your subscribe & connect area."
+msgstr ""
+
+#: ../../app/frontend/options.php:1691
+msgid "Text"
+msgstr ""
+
+#: ../../app/frontend/options.php:1692
+msgid "Change the default text in this area."
+msgstr ""
+
+#: ../../app/frontend/options.php:1697
+msgid "Enable Related Posts"
+msgstr ""
+
+#: ../../app/frontend/options.php:1698
+msgid ""
+"Enable related posts in the subscribe area. Uses posts with the same "
+"<strong>tags</strong> to find related posts. Note: Will not show in the "
+"Subscribe widget."
+msgstr ""
+
+#: ../../app/frontend/options.php:1706
+msgid "Subscribe By E-mail ID (Feedburner)"
+msgstr ""
+
+#: ../../app/frontend/options.php:1707
+#, php-format
+msgid "Enter your <a href=\"%s\">Feedburner ID</a> for the e-mail subscription form."
+msgstr ""
+
+#: ../../app/frontend/options.php:1712
+msgid "Subscribe By E-mail to MailChimp"
+msgstr ""
+
+#: ../../app/frontend/options.php:1713
+#, php-format
+msgid ""
+"If you have a MailChimp account you can enter the <a href=\"%s\" "
+"target=\"_blank\">MailChimp List Subscribe URL</a> to allow your users to "
+"subscribe to a MailChimp List."
+msgstr ""
+
+#: ../../app/frontend/options.php:1718
+msgid "Connect"
+msgstr ""
+
+#: ../../app/frontend/options.php:1721
+msgid "Enable RSS"
+msgstr ""
+
+#: ../../app/frontend/options.php:1722
+msgid "Enable the subscribe and RSS icon."
+msgstr ""
+
+#: ../../app/frontend/options.php:1727
+msgid "Twitter URL"
+msgstr ""
+
+#: ../../app/frontend/options.php:1728
+msgid ""
+"Enter your  <a href=\"http://www.twitter.com/\">Twitter</a> URL e.g. http:"
+"//www.twitter.com/starjive"
+msgstr ""
+
+#: ../../app/frontend/options.php:1733
+msgid "Facebook URL"
+msgstr ""
+
+#: ../../app/frontend/options.php:1734
+msgid ""
+"Enter your  <a href=\"http://www.facebook.com/\">Facebook</a> URL e.g. http:"
+"//www.facebook.com/starjive"
+msgstr ""
+
+#: ../../app/frontend/options.php:1739
+msgid "YouTube URL"
+msgstr ""
+
+#: ../../app/frontend/options.php:1740
+msgid ""
+"Enter your  <a href=\"http://www.youtube.com/\">YouTube</a> URL e.g. http:"
+"//www.youtube.com/starjive"
+msgstr ""
+
+#: ../../app/frontend/options.php:1745
+msgid "Flickr URL"
+msgstr ""
+
+#: ../../app/frontend/options.php:1746
+msgid ""
+"Enter your  <a href=\"http://www.flickr.com/\">Flickr</a> URL e.g. http://www."
+"flickr.com/starjive"
+msgstr ""
+
+#: ../../app/frontend/options.php:1751
+msgid "LinkedIn URL"
+msgstr ""
+
+#: ../../app/frontend/options.php:1752
+msgid ""
+"Enter your  <a href=\"http://www.www.linkedin.com.com/\">LinkedIn</a> URL e.g. "
+"http://www.linkedin.com/in/starjive"
+msgstr ""
+
+#: ../../app/frontend/options.php:1757
+msgid "Delicious URL"
+msgstr ""
+
+#: ../../app/frontend/options.php:1758
+msgid ""
+"Enter your <a href=\"http://www.delicious.com/\">Delicious</a> URL e.g. http:"
+"//www.delicious.com/starjive"
+msgstr ""
+
+#: ../../app/frontend/options.php:1763
+msgid "Google+ URL"
+msgstr ""
+
+#: ../../app/frontend/options.php:1764
+msgid ""
+"Enter your <a href=\"http://plus.google.com/\">Google+</a> URL e.g. https:"
+"//plus.google.com/104560124403688998123/"
+msgstr ""
+
+#: ../../app/frontend/options.php:1769 ../../app/frontend/options.php:1770
+msgid "Dribbble"
+msgstr ""
+
+#: ../../app/frontend/options.php:1770
+#, php-format
+msgid "Enter your %1$s URL e.g. http://dribbble.com/starjive"
+msgstr ""
+
+#: ../../app/frontend/options.php:1775 ../../app/frontend/options.php:1776
+msgid "Instagram"
+msgstr ""
+
+#: ../../app/frontend/options.php:1776
+#, php-format
+msgid "Enter your %1$s URL e.g. http://instagram.com/starjive"
+msgstr ""
+
+#: ../../app/frontend/options.php:1781 ../../app/frontend/options.php:1782
+msgid "Vimeo"
+msgstr ""
+
+#: ../../app/frontend/options.php:1782
+#, php-format
+msgid "Enter your %1$s URL e.g. http://vimeo.com/starjive"
+msgstr ""
+
+#: ../../app/frontend/options.php:1787 ../../app/frontend/options.php:1788
+msgid "Pinterest"
+msgstr ""
+
+#: ../../app/frontend/options.php:1788
+#, php-format
+msgid "Enter your %1$s URL e.g. http://pinterest.com/starjive"
+msgstr ""
+
+#: ../../app/frontend/options.php:1804
+msgid "Contact Information"
+msgstr ""
+
+#: ../../app/frontend/options.php:1807
+msgid "Contact Information Panel"
+msgstr ""
+
+#: ../../app/frontend/options.php:1808
+msgid "Enable the contact information panel on your contact page template."
+msgstr ""
+
+#: ../../app/frontend/options.php:1814
+msgid "Location Name"
+msgstr ""
+
+#: ../../app/frontend/options.php:1815
+msgid "Enter the location name. Example: London Office"
+msgstr ""
+
+#: ../../app/frontend/options.php:1821
+msgid "Location Address"
+msgstr ""
+
+#: ../../app/frontend/options.php:1822
+msgid "Enter your company's address"
+msgstr ""
+
+#: ../../app/frontend/options.php:1828
+msgid "Telephone"
+msgstr ""
+
+#: ../../app/frontend/options.php:1829
+msgid "Enter your telephone number"
+msgstr ""
+
+#: ../../app/frontend/options.php:1835
+msgid "Fax"
+msgstr ""
+
+#: ../../app/frontend/options.php:1836
+msgid "Enter your fax number"
+msgstr ""
+
+#: ../../app/frontend/options.php:1848
+msgid "Enable Subscribe and Connect"
+msgstr ""
+
+#: ../../app/frontend/options.php:1849
+msgid "Enable the subscribe and connect functionality on the contact page template"
+msgstr ""
+
+#: ../../app/frontend/options.php:1854
+msgid "Maps"
+msgstr ""
+
+#: ../../app/frontend/options.php:1857
+msgid "Contact Form Google Maps Coordinates"
+msgstr ""
+
+#: ../../app/frontend/options.php:1858
+#, php-format
+msgid ""
+"Enter your Google Map coordinates to display a map on the Contact Form page "
+"template. You can get these details from %sGoogle Maps%s"
+msgstr ""
+
+#: ../../app/frontend/options.php:1863
+msgid "Disable Mousescroll"
+msgstr ""
+
+#: ../../app/frontend/options.php:1864
+msgid ""
+"Turn off the mouse scroll action for all the Google Maps on the site. This "
+"could improve usability on your site."
+msgstr ""
+
+#: ../../app/frontend/options.php:1869
+msgid "Map Height"
+msgstr ""
+
+#: ../../app/frontend/options.php:1870
+msgid "Height in pixels for the maps displayed on Single.php pages."
+msgstr ""
+
+#: ../../app/frontend/options.php:1875
+msgid "Default Map Zoom Level"
+msgstr ""
+
+#: ../../app/frontend/options.php:1876
+msgid "Set this to adjust the default in the post & page edit backend."
+msgstr ""
+
+#: ../../app/frontend/options.php:1882
+msgid "Default Map Type"
+msgstr ""
+
+#: ../../app/frontend/options.php:1883
+msgid "Set this to the default rendered in the post backend."
+msgstr ""
+
+#: ../../app/frontend/options.php:1889
+msgid "Satellite"
+msgstr ""
+
+#: ../../app/frontend/options.php:1890
+msgid "Hybrid"
+msgstr ""
+
+#: ../../app/frontend/options.php:1891
+msgid "Terrain"
+msgstr ""
+
+#: ../../app/frontend/options.php:1894
+msgid "Default Map Maker Color"
+msgstr ""
+
+#: ../../app/frontend/options.php:1895
+msgid "Pick a custom color for map marker."
+msgstr ""
+
+#: ../../app/frontend/options.php:1900
+msgid "Black"
+msgstr ""
+
+#: ../../app/frontend/options.php:1901
+msgid "Blue"
+msgstr ""
+
+#: ../../app/frontend/options.php:1902
+msgid "Green"
+msgstr ""
+
+#: ../../app/frontend/options.php:1903
+msgid "Pink"
+msgstr ""
+
+#: ../../app/frontend/options.php:1904
+msgid "Purple"
+msgstr ""
+
+#: ../../app/frontend/options.php:1905
+msgid "Red"
+msgstr ""
+
+#: ../../app/frontend/options.php:1906
+msgid "Teal"
+msgstr ""
+
+#: ../../app/frontend/options.php:1907
+msgid "White"
+msgstr ""
+
+#: ../../app/frontend/options.php:1908
+msgid "Yellow"
+msgstr ""
+
+#: ../../app/frontend/options.php:1911
+msgid "Map Callout Text"
+msgstr ""
+
+#: ../../app/frontend/options.php:1912
+msgid ""
+"Text or HTML that will be output when you click on the map marker for your "
+"location."
+msgstr ""
+
+#: ../../app/frontend/options.php:1928
+msgid "Simplify Layout"
+msgstr ""
+
+#: ../../app/frontend/options.php:1929
+msgid "This enables simply slim simplifying layout."
+msgstr ""
+
+#: ../../app/frontend/options.php:1934
+msgid "Galleries Page Layout"
+msgstr ""
+
+#: ../../app/frontend/options.php:1948
+msgid "Single Project Layout"
+msgstr ""
+
+#: ../../app/frontend/options.php:1987 ../../app/frontend/options.php:2046
+msgid "Select a specific layout for this post/page. Overrides default site layout."
+msgstr ""
+
+#: ../../app/frontend/options.php:1999
+msgid "Embed"
+msgstr ""
+
+#: ../../app/frontend/options.php:2001
+msgid "Enter embed code for use on single posts and with the Video widget."
+msgstr ""
+
+#: ../../app/frontend/options.php:2007
+msgid "URL"
+msgstr ""
+
+#: ../../app/frontend/options.php:2009
+msgid "Enter URL if you want to add a link to the uploaded image. (optional)"
+msgstr ""
+
+#: ../../app/frontend/options.php:2018 ../..
+#: app/frontend/integrations/projects/template.php:218 ../..
+#: app/frontend/widgets/blogauthor.php:206
+msgid "All"
+msgstr ""
+
+#: ../../app/frontend/options.php:2034
+msgid ""
+"Optionally select a \"Slide Group\" to show slides from only that \"Slide "
+"Group\"."
+msgstr ""
+
+#: ../../app/frontend/shortcodes.php:169
+#, php-format
+msgid "Visit %s&#8217;s website"
+msgstr ""
+
+#: ../../app/frontend/shortcodes.php:227
+msgid "Comments are closed"
+msgstr ""
+
+#: ../../app/frontend/shortcodes.php:268
+msgid "Tags: "
+msgstr ""
+
+#: ../../app/frontend/shortcodes.php:313
+#, php-format
+msgid "View all items in %s"
+msgstr ""
+
+#: ../../app/frontend/shortcodes.php:368
+msgid "Back to top"
+msgstr ""
+
+#: ../../app/frontend/shortcodes.php:493
+msgid "Log in"
+msgstr ""
+
+#: ../../app/frontend/shortcodes.php:495
+msgid "Log out"
+msgstr ""
+
+#: ../../app/frontend/widgetized-areas.php:15
+msgid "Primary"
+msgstr ""
+
+#: ../../app/frontend/widgetized-areas.php:17
+msgid ""
+"The default primary sidebar for your website, used in two or three-column "
+"layouts."
+msgstr ""
+
+#: ../../app/frontend/widgetized-areas.php:25
+msgid "Secondary"
+msgstr ""
+
+#: ../../app/frontend/widgetized-areas.php:27
+msgid "A secondary sidebar for your website, used in three-column layouts."
+msgstr ""
+
+#: ../../app/frontend/widgetized-areas.php:38
+#, php-format
+msgid "Footer %d"
+msgstr ""
+
+#: ../../app/frontend/widgetized-areas.php:40
+#, php-format
+msgid "Widgetized Footer Region %d."
+msgstr ""
+
+#: ../../app/frontend/widgetized-areas.php:49
+msgid "\"Widgets\" Page Template"
+msgstr ""
+
+#: ../../app/frontend/widgetized-areas.php:51
+msgid ""
+"The widgetized area used on the \"Widgets\" page template (displays only if "
+"widgets are added here). Defaults to page content if no widgets are added."
+msgstr ""
+
+#: ../../app/frontend/widgetized-areas.php:60
+msgid "Optional widgetized area in your right header"
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:178
+msgid "Execute Shortcodes on this Hook"
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:200 ../..
+#: app/frontend/extensions/hooks/classes/hooks.php:200 ../..
+#: app/frontend/extensions/hooks/screens/admin.php:2
+msgid "Hooks"
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:239 ../..
+#: app/frontend/extensions/meta/classes/meta.php:281
+msgid ""
+"Fill in the area you'd like to customise and hit the \"Save Changes\" button. "
+"It's as easy as that!"
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:240 ../..
+#: app/frontend/extensions/meta/classes/meta.php:282
+msgid "For more information:"
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:241 ../..
+#: app/frontend/extensions/meta/classes/meta.php:283
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Help Desk</a>"
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:243 ../..
+#: app/frontend/extensions/meta/classes/meta.php:285
+msgid "Overview"
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:357
+msgid "Executed below the opening <code>&lt;body&gt;</code> tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:363
+msgid "Executed before the opening <code>#header</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:370
+msgid "Executed at the top, inside the <code>#header</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:376
+msgid "Executed after the closing <code>#header</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:386
+msgid "Executed before the opening <code>#navigation</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:392
+msgid "Executed at the top, inside the <code>#navigation</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:398
+msgid "Executed after the closing <code>#navigation</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:408
+msgid "Executed before the opening <code>#content</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:415
+msgid "Executed before the opening <code>#main</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:421
+msgid "Executed before the WordPress Loop."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:427
+msgid "Executed at the start of the WordPress Loop."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:433
+msgid "Executed at the end of the WordPress Loop."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:439
+msgid "Executed after the WordPress Loop."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:445
+msgid "Executed after the closing <code>#main</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:451
+msgid "Executed after the closing <code>#content</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:461
+msgid "Executed before each post."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:468
+msgid "Executed at the top, inside each post's DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:474
+msgid "Executed at the bottom, inside each post's DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:480
+msgid "Executed after each post."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:489
+msgid "Executed before each single page."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:495
+msgid "Executed at the top, inside each single page's DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:501
+msgid "Executed at the bottom, inside each single page's DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:507
+msgid "Executed after each single page."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:516
+msgid "Executed before each sidebar."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:523
+msgid "Executed at the top, inside each sidebar's DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:529
+msgid "Executed at the bottom, inside each sidebar's DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:535
+msgid "Executed after each sidebar."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:545
+msgid "Executed at the top of the <code>footer.php</code> file."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:551
+msgid "Executed before the opening <code>#footer</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:557
+msgid "Executed at the top, inside the <code>#footer</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:563
+msgid "Executed before the opening <code>#footer .col-left</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:569
+msgid "Executed after the ending <code>#footer .col-left</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:575
+msgid "Executed before the opening <code>#footer .col-right</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:581
+msgid "Executed after the ending <code>#footer .col-right</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:587
+msgid "Executed after the closing <code>#footer</code> DIV tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:597
+msgid "Executed before the closing <code>&lt;/head&gt;</code> tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/classes/hooks.php:603
+msgid "Executed before the closing <code>&lt;/body&gt;</code> tag."
+msgstr ""
+
+#: ../../app/frontend/extensions/hooks/screens/admin.php:3
+msgid "Hooks Settings Updated."
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:103
+msgid "Above post content"
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:104
+msgid "on"
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:106
+msgid "Data above the content of your blog posts."
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:109
+msgid "\"Read more\" area below posts"
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:112
+msgid "Data below each blog post."
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:231 ../..
+#: app/frontend/extensions/meta/classes/meta.php:231 ../..
+#: app/frontend/extensions/meta/screens/admin.php:2
+msgid "Filters"
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:286
+msgid "Shortcode Reference"
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:296
+msgid "Use these shortcodes to include dynamic data into your meta sections."
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:409
+msgid "Link to read the full post."
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:410
+msgid "The post date."
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:411
+msgid "The post time."
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:414
+msgid "Comments for the post."
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:415
+msgid "Tags for the post."
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:416
+msgid "Categories for the post."
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:417
+msgid "\"Edit\" link for the post."
+msgstr ""
+
+#: ../../app/frontend/extensions/meta/screens/admin.php:3
+msgid "Filters Settings Updated."
+msgstr ""
+
+#: ../../app/frontend/integrations/our-team/template-our-team.php:16
+msgid "Our Team"
+msgstr ""
+
+#: ../../app/frontend/integrations/projects/template-recent-projects.php:14
+msgid "Recent Projects"
+msgstr ""
+
+#: ../../app/frontend/integrations/projects/template.php:215
+msgid "Select a category:"
+msgstr ""
+
+#: ../../app/frontend/integrations/projects/template.php:218
+msgid "View all projects"
+msgstr ""
+
+#: ../../app/frontend/integrations/projects/template.php:225
+#, php-format
+msgid "View all post filed under %s"
+msgstr ""
+
+#: ../../app/frontend/integrations/woocommerce/template.php:138
+msgid "Search for:"
+msgstr ""
+
+#: ../../app/frontend/integrations/woocommerce/template.php:161
+msgid "View your shopping cart"
+msgstr ""
+
+#: ../../app/frontend/integrations/woocommerce/template.php:163
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../../app/frontend/integrations/wooslider/wooslider.php:47
+msgid "Magazine"
+msgstr ""
+
+#: ../../app/frontend/integrations/wooslider/wooslider.php:48
+msgid "Business"
+msgstr ""
+
+#: ../../app/frontend/widgets/adspace.php:15
+msgid "Use this widget to add any type of Ad as a widget."
+msgstr ""
+
+#: ../../app/frontend/widgets/adspace.php:21
+msgid "Adspace Widget"
+msgstr ""
+
+#: ../../app/frontend/widgets/adspace.php:138
+msgid "Advert"
+msgstr ""
+
+#: ../../app/frontend/widgets/adspace.php:147 ../..
+#: app/frontend/widgets/component.php:142 ../../app/frontend/widgets/flickr.php:
+#: 161 ../../app/frontend/widgets/subscribe.php:119
+msgid "Title (optional):"
+msgstr ""
+
+#: ../../app/frontend/widgets/adspace.php:152
+msgid "Ad Code:"
+msgstr ""
+
+#: ../../app/frontend/widgets/adspace.php:155
+msgid "or"
+msgstr ""
+
+#: ../../app/frontend/widgets/adspace.php:158
+msgid "Image URL:"
+msgstr ""
+
+#: ../../app/frontend/widgets/adspace.php:163
+msgid "Link URL:"
+msgstr ""
+
+#: ../../app/frontend/widgets/adspace.php:168
+msgid "Alt text:"
+msgstr ""
+
+#: ../../app/frontend/widgets/blogauthor.php:166 ../../app/frontend/widgets/embed.
+#: php:162
+msgid "Title:"
+msgstr ""
+
+#: ../../app/frontend/widgets/blogauthor.php:176
+msgid "<a href=\"http://www.gravatar.com/\">Gravatar</a> E-mail:"
+msgstr ""
+
+#: ../../app/frontend/widgets/blogauthor.php:181
+msgid "Gravatar Size:"
+msgstr ""
+
+#: ../../app/frontend/widgets/blogauthor.php:186
+msgid "Gravatar Alignment:"
+msgstr ""
+
+#: ../../app/frontend/widgets/blogauthor.php:194
+msgid "Read More Text (optional):"
+msgstr ""
+
+#: ../../app/frontend/widgets/blogauthor.php:199
+msgid "Read More URL (optional):"
+msgstr ""
+
+#: ../../app/frontend/widgets/blogauthor.php:204
+msgid "Visible Pages:"
+msgstr ""
+
+#: ../../app/frontend/widgets/blogauthor.php:207
+msgid "Home only"
+msgstr ""
+
+#: ../../app/frontend/widgets/blogauthor.php:208
+msgid "Single only"
+msgstr ""
+
+#: ../../app/frontend/widgets/component.php:40
+msgid ""
+"This is a standardized component loading widget. Intended primarily for use "
+"in the \"Widgets\" Page Template widget region."
+msgstr ""
+
+#: ../../app/frontend/widgets/component.php:42
+msgid "Component"
+msgstr ""
+
+#: ../../app/frontend/widgets/component.php:45
+msgid "Blog"
+msgstr ""
+
+#: ../../app/frontend/widgets/component.php:46
+msgid "\"Business\" Slider"
+msgstr ""
+
+#: ../../app/frontend/widgets/component.php:47
+msgid "\"Magazine\" Slider"
+msgstr ""
+
+#: ../../app/frontend/widgets/component.php:48
+msgid "\"Magazine\" Grid"
+msgstr ""
+
+#: ../../app/frontend/widgets/component.php:49
+msgid "Current Page Content"
+msgstr ""
+
+#: ../../app/frontend/widgets/component.php:147
+msgid "Component:"
+msgstr ""
+
+#: ../../app/frontend/widgets/component.php:157
+msgid "Slide Group:"
+msgstr ""
+
+#: ../../app/frontend/widgets/embed.php:15
+msgid ""
+"This is a standardized embed widget. It displays the video embed codes from "
+"your posts in a tab-like fashion."
+msgstr ""
+
+#: ../../app/frontend/widgets/embed.php:21
+msgid "Embed/Video"
+msgstr ""
+
+#: ../../app/frontend/widgets/embed.php:151
+msgid "Recent Videos"
+msgstr ""
+
+#: ../../app/frontend/widgets/embed.php:167
+msgid "Category:"
+msgstr ""
+
+#: ../../app/frontend/widgets/embed.php:181
+msgid "Tag:"
+msgstr ""
+
+#: ../../app/frontend/widgets/embed.php:186
+msgid "Limit (optional):"
+msgstr ""
+
+#: ../../app/frontend/widgets/embed.php:191
+msgid "Width:"
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:15
+msgid "This Flickr widget populates photos from a Flickr ID."
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:21
+msgid "Flickr"
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:51
+msgid "Photos on"
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:166
+msgid "Flickr ID (<a href=\"http://www.idgettr.com\">idGettr</a>):"
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:171
+msgid "Number:"
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:180
+msgid "Type:"
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:182
+msgid "User"
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:183
+msgid "Group"
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:188
+msgid "Sorting:"
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:190 ../../app/frontend/widgets/tabs.php:
+#: 43 ../../app/frontend/widgets/tabs.php:48 ../../app/frontend/widgets/tabs.php:
+#: 180 ../../app/frontend/widgets/tabs.php:190
+msgid "Latest"
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:191
+msgid "Random"
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:196
+msgid "Size:"
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:198
+msgid "Square"
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:199
+msgid "Medium"
+msgstr ""
+
+#: ../../app/frontend/widgets/flickr.php:200
+msgid "Thumbnail"
+msgstr ""
+
+#: ../../app/frontend/widgets/subscribe.php:15
+msgid "Add a subscribe/connect widget."
+msgstr ""
+
+#: ../../app/frontend/widgets/subscribe.php:21 ../..
+#: app/frontend/widgets/subscribe.php:112
+msgid "Subscribe / Connect"
+msgstr ""
+
+#: ../../app/frontend/widgets/subscribe.php:116
+#, php-format
+msgid ""
+"Setup this widget in your <a href=\"%s\">options panel</a> under "
+"<strong>Subscribe &amp; Connect</strong>"
+msgstr ""
+
+#: ../../app/frontend/widgets/subscribe.php:125
+msgid "Disable Subscription Form"
+msgstr ""
+
+#: ../../app/frontend/widgets/subscribe.php:130
+msgid "Disable Social Icons"
+msgstr ""
+
+#: ../../app/frontend/widgets/subscribe.php:135
+msgid "Disable in Posts"
+msgstr ""
+
+#: ../../app/frontend/widgets/subscribe.php:140
+msgid "Disable in Pages"
+msgstr ""
+
+#: ../../app/frontend/widgets/tabs.php:15
+msgid ""
+"This widget is the Tabs that classically goes into the sidebar. It contains "
+"the Popular posts, Latest Posts, Recent comments and a Tag cloud."
+msgstr ""
+
+#: ../../app/frontend/widgets/tabs.php:21
+msgid "Tabs"
+msgstr ""
+
+#: ../../app/frontend/widgets/tabs.php:44 ../../app/frontend/widgets/tabs.php:49 .
+#: ./../app/frontend/widgets/tabs.php:181 ../../app/frontend/widgets/tabs.php:193
+#: ../../templates/template-sitemap.php:54
+msgid "Comments"
+msgstr ""
+
+#: ../../app/frontend/widgets/tabs.php:45 ../../app/frontend/widgets/tabs.php:50 .
+#: ./../app/frontend/widgets/tabs.php:182 ../../app/frontend/widgets/tabs.php:196
+msgid "Tags"
+msgstr ""
+
+#: ../../app/frontend/widgets/tabs.php:47 ../../app/frontend/widgets/tabs.php:179
+#: ../../app/frontend/widgets/tabs.php:187
+msgid "Popular"
+msgstr ""
+
+#: ../../app/frontend/widgets/tabs.php:162
+msgid "Number of posts:"
+msgstr ""
+
+#: ../../app/frontend/widgets/tabs.php:167
+msgid "Thumbnail Size (0=disable):"
+msgstr ""
+
+#: ../../app/frontend/widgets/tabs.php:172
+msgid "Popular limit (days):"
+msgstr ""
+
+#: ../../app/frontend/widgets/tabs.php:177
+msgid "First Visible Tab:"
+msgstr ""
+
+#: ../../app/frontend/widgets/tabs.php:185
+msgid "Hide Tabs:"
+msgstr ""
+
+#: ../../app/frontend/widgets/tabs.php:356
+msgctxt "comment topic"
+msgid "on"
+msgstr ""
+
+#. Name of the template
+msgid "Archives Page"
+msgstr ""
+
+#: ../../templates/template-archives.php:34
+msgid "The Last 30 Posts"
+msgstr ""
+
+#: ../../templates/template-archives.php:39
+msgid "comments"
+msgstr ""
+
+#: ../../templates/template-archives.php:43 ../../templates/template-sitemap.php:40
+msgid "Categories"
+msgstr ""
+
+#: ../../templates/template-archives.php:49
+msgid "Monthly Archives"
+msgstr ""
+
+#: ../../templates/template-contact-form.php:79
+#, php-format
+msgid "Name: %s \\n\\nEmail: %s \\n\\nComments: %s"
+msgstr ""
+
+#. Name of the template
+msgid "Image Gallery"
+msgstr ""
+
+#. Name of the template
+msgid "Sitemap"
+msgstr ""
+
+#: ../../templates/template-sitemap.php:35
+msgid "Pages"
+msgstr ""
+
+#: ../../templates/template-sitemap.php:45
+msgid "Posts per category"
+msgstr ""
+
+#: ../../templates/template-sitemap.php:62
+msgid "Product Categories"
+msgstr ""
+
+#. Name of the template
+msgid "Timeline"
+msgstr ""
+
+#. Name of the theme
+msgid "Light"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://www.starjive.com/"
+msgstr ""
+
+#. Description of the theme
+msgid "Designed by <a href=\"http://www.starjive.com\">STARJIVE STUDIOS</a>."
+msgstr ""
+
+#. Author of the theme
+msgid "STARJIVE STUDIOS"
+msgstr ""
+
+#: ../../searchform.php:4 ../../searchform.php:4 ../../searchform.php:4
+msgid "Search..."
+msgstr "Sök..."
+
+#: ../../searchform.php:5 ../../app/frontend/integrations/woocommerce/template.
+#: php:139 ../../app/frontend/integrations/woocommerce/template.php:140
+msgid "Search"
+msgstr "Sök"
+
+#: ../../app/backend/classes/settings.php:90 ../../app/backend/classes/settings.
+#: php:91
+msgid "Settings"
+msgstr "Inställningar"
+
+#: ../../app/frontend/actions.php:2444 ../../app/frontend/options.php:765 ../..
+#: app/frontend/extensions/hooks/classes/hooks.php:635
+msgid "Navigation"
+msgstr "Meny"
+
+#: ../../app/frontend/functions.php:170 ../../app/frontend/functions.php:210
+msgid "Subscribe to our e-mail newsletter to receive updates."
+msgstr "Prenumerera på vårt nyhetsbrev för att få uppdateringar."
+
+#: ../../app/frontend/functions.php:214 ../../app/frontend/functions.php:214 ../..
+#: app/frontend/functions.php:214 ../../app/frontend/functions.php:226 ../..
+#: app/frontend/functions.php:226 ../../app/frontend/functions.php:226
+msgid "E-mail"
+msgstr "E-post"
+
+#: ../../app/frontend/functions.php:218 ../../app/frontend/functions.php:227 ../..
+#: templates/template-contact-form.php:255
+msgid "Submit"
+msgstr "Skicka"
+
+#: ../../app/frontend/functions.php:279
+msgid "Related Posts:"
+msgstr "Relaterade inlägg:"
+
+#: ../../app/frontend/functions.php:326 ../../app/frontend/functions.php:337 ../..
+#: app/frontend/functions.php:344 ../../app/frontend/functions.php:351 ../..
+#: app/frontend/functions.php:372
+msgid "Archive"
+msgstr "Arkiv"
+
+#: ../../app/frontend/functions.php:357
+msgid "Author Archive"
+msgstr "Skrivbent arkiv"
+
+#: ../../app/frontend/options.php:549 ../../app/frontend/options.php:599
+msgid "Header Background Color"
+msgstr "Sidhuvud bakgrundsfärg "
+
+#: ../../app/frontend/options.php:585
+msgid "Header &amp; Footer"
+msgstr "Sidhuvud &amp; Sidfot"
+
+#: ../../app/frontend/options.php:596 ../../app/frontend/widgetized-areas.php:59
+msgid "Header"
+msgstr "Sidhuvud"
+
+#: ../../app/frontend/options.php:617
+msgid "Header Border"
+msgstr "Sidhuvud kantlinje"
+
+#: ../../app/frontend/options.php:776
+msgid "Top Navigation"
+msgstr "Top Meny"
+
+#: ../../app/frontend/options.php:779
+msgid "Top Navigation - Background Color"
+msgstr "Top Meny - Bakgrundsfärg"
+
+#: ../../app/frontend/options.php:991
+msgid "Disable Post Author"
+msgstr "Inaktivera skrivbent inlägg"
+
+#: ../../app/frontend/options.php:1800
+msgid "Contact Page"
+msgstr "Kontaktsida"
+
+#: ../../app/frontend/options.php:1842
+msgid "Contact Form E-Mail"
+msgstr "Kontaktformulär E-post"
+
+#: ../../app/frontend/options.php:1843
+msgid "Enter your E-mail address to use on the \"Contact Form\" page Template."
+msgstr "Skriv in e-postadress du vill använda på \"Kontaktformulärets\" mall sida."
+
+#: ../../app/frontend/shortcodes.php:13
+msgid "Continue Reading"
+msgstr "Fortsätt läsa"
+
+#: ../../app/frontend/shortcodes.php:522
+msgid "All Rights Reserved."
+msgstr "Alla rättigheter reserverade."
+
+#: ../../app/frontend/shortcodes.php:546
+msgid "Powered by"
+msgstr "Sidan drivs av"
+
+#: ../../app/frontend/shortcodes.php:546
+msgid "Designed by"
+msgstr "Designad av"
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:412
+msgid "The post author (link to the author's website)."
+msgstr "Skrivbent inlägg (länk till skrivbentens hemsida)."
+
+#: ../../app/frontend/extensions/meta/classes/meta.php:413
+msgid "The post author (link to the author's posts archive)."
+msgstr "Skrivbent inlägg (länk till skrivbentens inläggs arkiv)."
+
+#: ../../app/frontend/widgets/blogauthor.php:15
+msgid "This is a Blog Author Info widget."
+msgstr "Detta är en Skrivbent Info widget."
+
+#: ../../app/frontend/widgets/blogauthor.php:21
+msgid "Blog Author Info"
+msgstr "Skrivbent biografi"
+
+#: ../../app/frontend/widgets/blogauthor.php:152
+msgid "About The Author"
+msgstr "Om skrivbent"
+
+#: ../../app/frontend/widgets/blogauthor.php:157
+msgid "Read More"
+msgstr "Läs mer"
+
+#: ../../app/frontend/widgets/blogauthor.php:171
+msgid "Bio:"
+msgstr "Biografi"
+
+#. Name of the template
+msgid "Contact Form"
+msgstr "Kontaktformulär"
+
+#: ../../templates/template-contact-form.php:35
+msgid "You got the maths wrong."
+msgstr "Du fick fel uträkning."
+
+#: ../../templates/template-contact-form.php:43
+msgid "You forgot to enter your name."
+msgstr "Du glömde att ange ditt namn."
+
+#: ../../templates/template-contact-form.php:51
+msgid "You forgot to enter your email address."
+msgstr "Du glömde att skriva in din e-postadress."
+
+#: ../../templates/template-contact-form.php:54
+msgid "You entered an invalid email address."
+msgstr "Du angav en ogiltig e-postadress."
+
+#: ../../templates/template-contact-form.php:62
+msgid "You forgot to enter your comments."
+msgstr "Du glömde att skriva i en kommentar."
+
+#: ../../templates/template-contact-form.php:72
+msgid "Contact Form Submission from "
+msgstr "Kontaktaformulär från"
+
+#: ../../templates/template-contact-form.php:80 ../../templates/template-contact-
+#: form.php:92
+msgid "From: "
+msgstr "Från:"
+
+#: ../../templates/template-contact-form.php:80
+msgid "Reply-To: "
+msgstr "Svara till:"
+
+#: ../../templates/template-contact-form.php:91
+msgid "You emailed "
+msgstr "Du mailade"
+
+#: ../../templates/template-contact-form.php:111
+msgid "You got the maths wrong"
+msgstr "Du fick summa på uträkningen"
+
+#: ../../templates/template-contact-form.php:118
+msgid "You forgot to enter your"
+msgstr "Du glömde att ange"
+
+#: ../../templates/template-contact-form.php:125
+msgid "You entered an invalid"
+msgstr "Du har angett ogiltigt"
+
+#: ../../templates/template-contact-form.php:136
+msgid "<strong>Thanks!</strong> Your email was successfully sent."
+msgstr "<strong>Tack!</strong> Din e-postmeddelande har skickats."
+
+#: ../../templates/template-contact-form.php:179
+msgid "Your email was successfully sent."
+msgstr "Ditt e-postmeddelande har skickats."
+
+#: ../../templates/template-contact-form.php:196
+msgid "Tel:"
+msgstr "Tel:"
+
+#: ../../templates/template-contact-form.php:197
+msgid "Fax:"
+msgstr "Fax:"
+
+#: ../../templates/template-contact-form.php:214
+msgid "There was an error submitting the form."
+msgstr "Det gick inte att skicka formuläret."
+
+#: ../../templates/template-contact-form.php:218
+msgid ""
+"Please <strong>add your e-mail</strong> in <em>Contact Page > Contact Form E-"
+"mail</em>."
+msgstr ""
+"Vänligen <strong>lägg till en e-postadress för kontaktformläret</strong> i "
+"<em>Inställningar > Kontaktsida \"Kontaktformulär E-post\"</em>."
+
+#: ../../templates/template-contact-form.php:232
+msgid "Email"
+msgstr "E-post"
+
+#: ../../templates/template-contact-form.php:239
+msgid "Message"
+msgstr "Meddelande"
+
+#: ../../templates/template-contact-form.php:246
+msgid "Solve:"
+msgstr "Räkna:"
+
+#: ../../templates/template-contact-form.php:253
+msgid "Send a copy of this email to yourself"
+msgstr "Skicka en kopia av detta mail till dig själv"
+
+#: ../../templates/template-contact-form.php:254
+msgid "If you want to submit this form, do not enter anything in this field"
+msgstr "Om du vill skicka detta formuläret, ange inget i detta område"
+
+#: ../../templates/contents/content-404.php:25 ../../templates/contents/content-
+#: magazine-featured.php:26 ../../templates/contents/content-magazine-grid.php:26
+#: ../../templates/contents/content-page-template-business.php:24 ../..
+#: templates/contents/content-page.php:27 ../../templates/contents/content-post.
+#: php:40 ../../templates/contents/content-search.php:40 ../..
+#: templates/contents/content.php:28
+msgid "Pages:"
+msgstr "Sidor:"
+
+#: ../../templates/contents/content-404.php:33
+msgid "Error 404 - Page not found!"
+msgstr "Fel 404 - Sidan kunde inte hittas!"
+
+#: ../../templates/contents/content-404.php:38
+msgid ""
+"The page you are trying to reach does not exist, or has been moved. Please "
+"use the menus or the search box to find what you are looking for."
+msgstr ""
+"Sidan du försöker nå existerar inte, eller har flyttats. Använd menyerna "
+"eller sökrutan för att hitta det du letar efter."
+
+#: ../../templates/contents/content-magazine-featured.php:55 ../..
+#: templates/contents/content-magazine-grid.php:50 ../..
+#: templates/contents/content-page.php:44 ../../templates/contents/content-post.
+#: php:58
+msgid "Continue Reading &rarr;"
+msgstr "Läs hela artikeln &rarr;"
+
+#: ../../templates/contents/content-noposts.php:2
+msgid "Sorry, no posts matched your criteria."
+msgstr "Tyvärr, Inga inlägg matchade dina kriterier."
+
+#: ../../templates/loops/loop-search.php:18
+#, php-format
+msgid "Search results for &quot;%s&quot;"
+msgstr "Sökresultat för &quot;%s&quot;"

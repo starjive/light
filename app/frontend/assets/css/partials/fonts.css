@@ -1,0 +1,11 @@
+
+@font-face {
+	font-family: "social";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../../../../backend/assets/fonts/social.eot");
+	src: url("../../../../backend/assets/fonts/social.eot?#iefix") format("embedded-opentype"),
+		url("../../../../backend/assets/fonts/social.woff") format("woff"),
+		url("../../../../backend/assets/fonts/social.ttf") format("truetype"),
+		url("../../../../backend/assets/fonts/social.svg#sf-social") format("svg");
+}

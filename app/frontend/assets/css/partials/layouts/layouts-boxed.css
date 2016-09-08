@@ -1,0 +1,61 @@
+
+/*-------------------------------------------------------------------------------------------*\
+	Layouts - Boxed layout
+\*-------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+/* Fix fieldset width in IE */
+fieldset {
+	display: block;
+	width: 100%;
+}
+  
+@media only screen and (max-width: 767px) {
+
+	body.boxed-layout {
+		padding: 0;
+	}
+	
+	body.boxed-layout #top {
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+	}
+	
+	body.boxed-layout #wrapper {
+		margin-left: 0;
+		margin-right: 0;
+		border: none;
+	}
+	
+	body.boxed-layout #header,
+	body.boxed-layout #footer {
+		margin: 0;
+		padding: 1em;
+	}
+
+}
+
+/* Boxed Layout */
+@media only screen and (min-width: 768px) {
+
+	.boxed-layout #inner-wrapper,
+	.boxed-layout #wrapper {
+		padding: 0;
+	}
+	
+	.boxed-layout #header,
+	.boxed-layout #content,
+	.boxed-layout #footer-widgets,
+	.boxed-layout #footer {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	.boxed-layout #header {
+		background-clip: padding-box;
+		-webkit-background-clip: padding-box;
+	}
+
+}

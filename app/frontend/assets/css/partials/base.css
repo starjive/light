@@ -1,0 +1,140 @@
+
+/*
+* {
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*/
+
+body {
+	font: 300 13px/20px "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+	color: #555;
+	background-color: #fff;
+	-webkit-font-smoothing: subpixel-antialiased;
+	word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+	color: #222;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+h6 {
+	font-size: 0.8em;
+}
+
+p {
+	margin: 0 0 1.2em;
+	font: 300 14px/22px "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+}
+
+strong {
+	font-weight: bold;
+}
+
+hr {
+	background-color: #e6e6e6;
+	border: 0;
+	height: 1px;
+	margin-bottom: 20px;
+}
+
+input,
+textarea {
+	padding: 5px;
+	background: #fff;
+	border-color: #efefef;
+	border-width: 2px;
+	border-style: solid;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	font-size: 1em;
+	color: #666;
+	font-family: inherit;
+}
+
+.hide {
+	display: none;
+}
+
+img {
+	vertical-align: bottom;
+	max-width: 100%;
+}
+
+/* Bicubic resizing for non-native sized IMG: code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img {
+	-ms-interpolation-mode: bicubic;
+}
+
+a:link, a:visited {
+	color: #428bca;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FF4800;
+}
+
+h1 a:link, h1 a:visited,
+h2 a:link,
+h2 a:visited,
+h3 a:link,
+h3 a:visited,
+h4 a:link,
+h4 a:visited,
+h5 a:link,
+h5 a:visited,
+h6 a:link,
+h6 a:visited {
+	text-decoration: none;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+	text-decoration: underline;
+}
+
+embed,
+iframe,
+video {
+	max-width: 100%;
+}
+
+video {
+	height: auto;
+}
