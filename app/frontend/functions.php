@@ -1,4 +1,154 @@
 <?php
+// File Security Check
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+	/**
+	 * Get the current page template in use.
+	 *
+	 * @since	1.0
+	 * @return	void
+	 */
+	function sf_get_page_template() {
+
+		global $wp_query;
+
+		$page = $wp_query->get_queried_object();
+		$custom_fields = get_post_custom_values('_wp_page_template',$page->ID);
+		$page_template = $custom_fields[0];
+
+		return $page_template;
+
+	} // End sf_get_page_template()
+
+
+	/**
+	 * Load a template part into a template
+	 *
+	 * Makes it easy for a theme to reuse sections of code in a easy to overload way
+	 * for child themes.
+	 *
+	 * Includes the named template part for a theme or if a name is specified then a
+	 * specialised part will be included. If the theme contains no {slug}.php file
+	 * then no template will be included.
+	 *
+	 * The template is included using require, not require_once, so you may include the
+	 * same template part multiple times.
+	 *
+	 * For the parameter, if the file is called "{slug}-special.php" then specify
+	 * "special".
+	 *
+	 * This version of the `get_template_part()` function has been enhanced to include
+	 * additional checks for "{slug}-POST_SLUG.php" and "{slug}-POST_ID.php" if within
+	 * the loop. It also checks for "{slug}-POST_FORMAT.php" if using WordPress 3.1+.
+	 *
+	 * @uses locate_template()
+	 * @since	1.0
+	 * @uses	do_action() Calls 'get_template_part_{$slug}' action.
+	 *
+	 * @param	string $slug The slug name for the generic template.
+	 * @param	string $name The name of the specialised template.
+	 */
+
+	function sf_get_template_part ( $slug, $name = null ) {
+
+		global $post, $wp_version, $wp_query;
+
+		do_action( "get_template_part_{$slug}", $slug, $name );
+		
+		$templates = array();
+
+		// Template files specific to this post in single and archive scenarios.
+		if ( isset( $post ) ) {
+		
+			$post_type = get_post_type();
+		
+			// Specific files.
+			
+			// Archive.
+			if ( is_archive() || is_home() || is_search() ) {
+				$templates[] = "{$slug}-archive-{$post->post_name}.php";
+				$templates[] = "{$slug}-archive-" . $post_type . "-{$post->ID}.php";
+				$templates[] = "{$slug}-archive-" . $post_type . ".php";
+			}
+			
+			// Single.
+			if ( is_singular() ) {
+				$templates[] = "{$slug}-single-{$post->post_name}.php";
+				$templates[] = "{$slug}-single-" . $post_type . "-{$post->ID}.php";
+			}
+			
+			$templates[] = "{$slug}-{$post->post_name}.php";
+			if ( $post_type != 'post' ) { $templates[] = "{$slug}-" . $post_type . "-{$post->ID}.php"; }
+			$templates[] = "{$slug}-post-{$post->ID}.php";
+			
+			// More generic files.
+			
+			// Archive.
+			if ( is_archive() || is_home() ) {
+				$templates[] = "{$slug}-archive-" . $post_type . ".php";
+				$templates[] = "{$slug}-archive.php";
+			}
+			
+			// Single.
+			if ( is_singular() ) {
+				$templates[] = "{$slug}-single-" . $post_type . ".php";
+				$templates[] = "{$slug}-single.php";
+			}
+		
+		}
+
+		// Template file for post format.
+		if ( $wp_version >= '3.1' )
+			if ( isset( $post ) && get_post_format( $post ) )
+				$templates[] = "{$slug}-format-" . get_post_format( $post ) . '.php';
+		
+		// Template file as per the parameters.
+		if ( isset( $name ) )
+			$templates[] = "{$slug}-{$name}.php";
+
+		// Generic $slug template file.
+		$templates[] = "{$slug}.php";
+		
+		$templates = apply_filters( 'sf_template_parts', $templates );
+		
+		locate_template( $templates, true, false );
+
+	} // End sf_get_template_part()
+
+
+	/**
+	 * Re-order Theme menu items in WordPress admin.
+	 *
+	 * @since	1.0
+	 * @return	void
+	 */
+	function sf_reorder_admin_menu () {
+		global $submenu;
+		
+		if ( ! array_key_exists( 'sf', $submenu ) ) { return ; }
+		
+		$items_to_move = array();
+		$first_item = array();
+		
+		foreach ( $submenu['sf'] as $k => $s ) {
+			if ( in_array( $s[2], array( 'sf-hook-manager', 'sf-meta-manager' ) ) ) {
+				$items_to_move[] = $s;
+				unset( $submenu['sf'][$k] );
+			}
+			
+			if ( $k == 0 ) { $first_item[] = $s; unset( $submenu['sf'][$k]); }
+		}
+		
+		sort( $items_to_move );
+		
+		$remaining_items = $submenu['sf'];
+		
+		// Grab the first item and unset it from the main array.
+		$submenu['sf'] = array_merge( $first_item, $items_to_move, $remaining_items );
+
+	} // End sf_reorder_admin_menu()
+	add_action( 'admin_menu', 'sf_reorder_admin_menu', 99 );
+
 
 	/**
 	 * Page / Post navigation
@@ -8,19 +158,19 @@
 	 */
 	if ( ! function_exists( 'sf_pagenav' ) ) {
 		function sf_pagenav( $custom_query = '' ) {
-	
+
 			global $sf_options, $wp_query, $paged, $page;
-	
+
 			if ( is_object( $custom_query ) && is_a( $custom_query, 'WP_Query' ) ) {
 				$original_query = $wp_query;
 				$wp_query = $custom_query;
 			}
-	
+
 			// Set query max pages
 			$max_pages = 1;
 			if ( isset( $wp_query->max_num_pages ) ) $max_pages = $wp_query->max_num_pages;
-	
-	
+
+
 			// Change the icon classes if is_rtl().
 			$left_class = 'left';
 			$right_class = 'right';
@@ -28,7 +178,7 @@
 				$left_class = 'right';
 				$right_class = 'left';
 			}
-	
+
 			// If the user has set the option to use simple paging links, display those. By default, display the pagination.
 			if ( isset( $sf_options['sf_pagination_type'] ) && 'simple' == $sf_options['sf_pagination_type'] ) {
 				if ( get_next_posts_link( '', $max_pages ) || get_previous_posts_link() ) {
@@ -46,14 +196,14 @@
 			} else {
 				sf_pagination( array(), $custom_query );
 			} // End IF Statement
-	
+
 		} // End sf_pagenav()
 	} // End IF Statement
-	
+
 	if (!function_exists('sf_postnav')) {
 		function sf_postnav() {
 			if ( is_single() ) {
-	
+
 				// Change the icon classes if is_rtl().
 				$left_class = 'left';
 				$right_class = 'right';
@@ -67,7 +217,7 @@
 					<div class="nav-next fr"><?php next_post_link( '%link', '%title <i class="fa fa-angle-' . esc_attr( $right_class ) . '"></i>' ) ?></div>
 					<div class="fix"></div>
 				</div>
-	
+
 			<?php
 			}
 		}
@@ -83,14 +233,14 @@
 	if ( ! function_exists( 'sf_add_slides' ) ) {
 		function sf_add_slides() {
 			global $sf_options, $wp_version;
-	
+
 			if ( isset( $sf_options['sf_biz_slides_disable'] ) && ( $sf_options['sf_biz_slides_disable'] == 'true' ) ) { return; }
-	
+
 			$icon = get_template_directory_uri() .'/app/frontend/assets/images/slides.png';
 			if ( '3.9' <= $wp_version ) {
 				$icon = 'dashicons-images-alt2';
 			}
-	
+
 			// "Slides" Custom Post Type
 			$labels = array(
 				'name' => _x( 'Slides', 'post type general name', 'sfwp-locale' ),
@@ -105,7 +255,7 @@
 				'not_found_in_trash' => __( 'No slides found in Trash', 'sfwp-locale' ),
 				'parent_item_colon' => ''
 			);
-	
+
 			$args = array(
 				'labels' => $labels,
 				'public' => false,
@@ -120,9 +270,9 @@
 				'taxonomies' => array( 'slide-page' ),
 				'supports' => array( 'title','editor','thumbnail','excerpt' )
 			);
-	
+
 			register_post_type( 'slide', $args );
-	
+
 			// "Slide Pages" Custom Taxonomy
 			$labels = array(
 				'name' => _x( 'Slide Groups', 'taxonomy general name', 'sfwp-locale' ),
@@ -137,7 +287,7 @@
 				'new_item_name' => __( 'New Slide Group Name', 'sfwp-locale' ),
 				'menu_name' => __( 'Slide Groups', 'sfwp-locale' )
 			);
-	
+
 			$args = array(
 				'hierarchical' => true,
 				'labels' => $labels,
@@ -145,10 +295,10 @@
 				'query_var' => true,
 				'rewrite' => array( 'slug' => 'slide-page' )
 			);
-	
+
 			register_taxonomy( 'slide-page', array( 'slide' ), $args );
 		}
-	
+
 		add_action( 'init', 'sf_add_slides' );
 	}
 
@@ -161,7 +311,7 @@
 	 */
 	if (!function_exists('sf_subscribe_connect')) {
 		function sf_subscribe_connect($widget = 'false', $title = '', $form = '', $social = '') {
-	
+
 			//Setup default variables, overriding them if the "Theme Options" have been saved.
 			$settings = array(
 							'connect' => 'false',
@@ -186,29 +336,29 @@
 							'connect_pinterest' => ''
 							);
 			$settings = sf_get_dynamic_values( $settings );
-	
+
 			// Get language for form
 			$locale = get_locale();
 			if ( '' == $locale )
 				$locale = 'en_US';
-	
+
 			// Setup title
 			if ( $widget != 'true' )
 				$title = $settings[ 'connect_title' ];
-	
+
 			// Setup related post (not in widget)
 			$related_posts = '';
 			if ( $settings[ 'connect_related' ] == "true" AND $widget != "true" )
 				$related_posts = do_shortcode( '[related_posts limit="5"]' );
-	
+
 	?>
 		<?php if ( $settings[ 'connect' ] == "true" OR $widget == 'true' ) : ?>
 		<aside id="connect">
 			<h3><?php if ( $title ) echo stripslashes( $title ); else _e( 'Subscribe', 'sfwp-locale' ); ?></h3>
-	
+
 			<div <?php if ( $related_posts != '' ) echo 'class="col-left"'; ?>>
 				<p><?php if ( $settings['connect_content'] != '') echo stripslashes( $settings['connect_content'] ); else _e( 'Subscribe to our e-mail newsletter to receive updates.', 'sfwp-locale' ); ?></p>
-	
+
 				<?php if ( $settings['connect_newsletter_id'] != "" AND $form != 'on' ) : ?>
 				<form class="newsletter-form<?php if ( $related_posts == '' ) echo ' fl'; ?>" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=<?php echo $settings['connect_newsletter_id']; ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
 					<input class="email" type="text" name="email" value="<?php _e( 'E-mail', 'sfwp-locale' ); ?>" onfocus="if (this.value == '<?php _e( 'E-mail', 'sfwp-locale' ); ?>') {this.value = '';}" onblur="if (this.value == '') {this.value = '<?php _e( 'E-mail', 'sfwp-locale' ); ?>';}" />
@@ -218,7 +368,7 @@
 					<input class="submit button" type="submit" name="submit" value="<?php _e( 'Submit', 'sfwp-locale' ); ?>" />
 				</form>
 				<?php endif; ?>
-	
+
 				<?php if ( $settings['connect_mailchimp_list_url'] != "" AND $form != 'on' AND $settings['connect_newsletter_id'] == "" ) : ?>
 				<!-- Begin MailChimp Signup Form -->
 				<div id="mc_embed_signup">
@@ -229,58 +379,58 @@
 				</div>
 				<!--End mc_embed_signup-->
 				<?php endif; ?>
-	
+
 				<?php if ( $social != 'on' ) : ?>
 				<div class="social<?php if ( $related_posts == '' AND $settings['connect_newsletter_id' ] != "" ) echo ' fr'; ?>">
 					<?php if ( $settings['connect_rss' ] == "true" ) { ?>
 					<a href="<?php if ( $settings['feed_url'] ) { echo esc_url( $settings['feed_url'] ); } else { echo get_bloginfo_rss('rss2_url'); } ?>" class="subscribe" title="RSS"></a>
-	
+
 					<?php } if ( $settings['connect_twitter' ] != "" ) { ?>
 					<a target="_blank" href="<?php echo esc_url( $settings['connect_twitter'] ); ?>" class="twitter" title="Twitter"></a>
-	
+
 					<?php } if ( $settings['connect_facebook' ] != "" ) { ?>
 					<a target="_blank" href="<?php echo esc_url( $settings['connect_facebook'] ); ?>" class="facebook" title="Facebook"></a>
-	
+
 					<?php } if ( $settings['connect_youtube' ] != "" ) { ?>
 					<a target="_blank" href="<?php echo esc_url( $settings['connect_youtube'] ); ?>" class="youtube" title="YouTube"></a>
-	
+
 					<?php } if ( $settings['connect_flickr' ] != "" ) { ?>
 					<a target="_blank" href="<?php echo esc_url( $settings['connect_flickr'] ); ?>" class="flickr" title="Flickr"></a>
-	
+
 					<?php } if ( $settings['connect_linkedin' ] != "" ) { ?>
 					<a target="_blank" href="<?php echo esc_url( $settings['connect_linkedin'] ); ?>" class="linkedin" title="LinkedIn"></a>
-	
+
 					<?php } if ( $settings['connect_delicious' ] != "" ) { ?>
 					<a target="_blank" href="<?php echo esc_url( $settings['connect_delicious'] ); ?>" class="delicious" title="Delicious"></a>
-	
+
 					<?php } if ( $settings['connect_googleplus' ] != "" ) { ?>
 					<a target="_blank" href="<?php echo esc_url( $settings['connect_googleplus'] ); ?>" class="googleplus" title="Google+"></a>
-	
+
 					<?php } if ( $settings['connect_dribbble' ] != "" ) { ?>
 					<a target="_blank" href="<?php echo esc_url( $settings['connect_dribbble'] ); ?>" class="dribbble" title="Dribbble"></a>
-	
+
 					<?php } if ( $settings['connect_instagram' ] != "" ) { ?>
 					<a target="_blank" href="<?php echo esc_url( $settings['connect_instagram'] ); ?>" class="instagram" title="Instagram"></a>
-	
+
 					<?php } if ( $settings['connect_vimeo' ] != "" ) { ?>
 					<a target="_blank" href="<?php echo esc_url( $settings['connect_vimeo'] ); ?>" class="vimeo" title="Vimeo"></a>
-	
+
 					<?php } if ( $settings['connect_pinterest' ] != "" ) { ?>
 					<a target="_blank" href="<?php echo esc_url( $settings['connect_pinterest'] ); ?>" class="pinterest" title="Pinterest"></a>
-	
+
 					<?php } ?>
 				</div>
 				<?php endif; ?>
-	
+
 			</div><!-- col-left -->
-	
+
 			<?php if ( $settings['connect_related'] == "true" AND $related_posts != '' ) : ?>
 			<div class="related-posts col-right">
 				<h4><?php _e( 'Related Posts:', 'sfwp-locale' ); ?></h4>
 				<?php echo $related_posts; ?>
 			</div><!-- col-right -->
 			<?php wp_reset_query(); endif; ?>
-	
+
 			<div class="fix"></div>
 		</aside>
 		<?php endif; ?>
@@ -301,107 +451,107 @@
 	 * @return	null|string Null on no title. String if $echo parameter is false.
 	 */
 	 if ( ! function_exists( 'sf_archive_title' ) ) {
-	
+
 		function sf_archive_title ( $before = '', $after = '', $echo = true ) {
-	
+
 			global $wp_query;
-	
+
 			if ( is_category() || is_tag() || is_tax() ) {
-	
+
 				$taxonomy_obj = $wp_query->get_queried_object();
 				$term_id = $taxonomy_obj->term_id;
 				$taxonomy_short_name = $taxonomy_obj->taxonomy;
-	
+
 				$taxonomy_raw_obj = get_taxonomy( $taxonomy_short_name );
-	
+
 			} // End IF Statement
-	
+
 			$title = '';
 			$delimiter = ' | ';
 			$date_format = get_option( 'date_format' );
-	
+
 			// Category Archive
 			if ( is_category() ) {
-	
+
 				$title = '<span class="fl cat">' . __( 'Archive', 'sfwp-locale' ) . $delimiter . single_cat_title( '', false ) . '</span> <span class="fr catrss">';
 				$cat_obj = $wp_query->get_queried_object();
 				$cat_id = $cat_obj->cat_ID;
 				$title .= '<a href="' . get_term_feed_link( $term_id, $taxonomy_short_name, '' ) . '" class="fa fa-rss fa-large" ></a></span>';
-	
+
 				$has_title = true;
 			}
-	
+
 			// Day Archive
 			if ( is_day() ) {
-	
+
 				$title = __( 'Archive', 'sfwp-locale' ) . $delimiter . get_the_time( $date_format );
 			}
-	
+
 			// Month Archive
 			if ( is_month() ) {
-	
+
 				$date_format = apply_filters( 'sf_archive_title_date_format', 'F, Y' );
 				$title = __( 'Archive', 'sfwp-locale' ) . $delimiter . get_the_time( $date_format );
 			}
-	
+
 			// Year Archive
 			if ( is_year() ) {
-	
+
 				$date_format = apply_filters( 'sf_archive_title_date_format', 'Y' );
 				$title = __( 'Archive', 'sfwp-locale' ) . $delimiter . get_the_time( $date_format );
 			}
-	
+
 			// Author Archive
 			if ( is_author() ) {
-	
+
 				$title = __( 'Author Archive', 'sfwp-locale' ) . $delimiter . get_the_author_meta( 'display_name', get_query_var( 'author' ) );
 			}
-	
+
 			// Tag Archive
 			if ( is_tag() ) {
-	
+
 				$title = __( 'Tag Archives', 'sfwp-locale' ) . $delimiter . single_tag_title( '', false );
 			}
-	
+
 			// Post Type Archive
 			if ( function_exists( 'is_post_type_archive' ) && is_post_type_archive() ) {
-	
+
 				/* Get the post type object. */
 				$post_type_object = get_post_type_object( get_query_var( 'post_type' ) );
-	
+
 				$title = $post_type_object->labels->name . ' ' . __( 'Archive', 'sfwp-locale' );
 			}
-	
+
 			// Post Format Archive
 			if ( get_query_var( 'taxonomy' ) == 'post_format' ) {
-	
+
 				$post_format = str_replace( 'post-format-', '', get_query_var( 'post_format' ) );
-	
+
 				$title = get_post_format_string( $post_format ) . ' ' . __( ' Archives', 'sfwp-locale' );
 			}
-	
+
 			// General Taxonomy Archive
 			if ( is_tax() ) {
-	
+
 				$title = sprintf( __( '%1$s Archives: %2$s', 'sfwp-locale' ), $taxonomy_raw_obj->labels->name, $taxonomy_obj->name );
-	
+
 			}
-	
+
 			if ( strlen($title) == 0 )
 			return;
-	
+
 			$title = $before . $title . $after;
-	
+
 			// Allow for external filters to manipulate the title value.
 			$title = apply_filters( 'sf_archive_title', $title, $before, $after );
-	
+
 			if ( $echo )
 				echo $title;
 			else
 				return $title;
-	
+
 		} // End sf_archive_title()
-	
+
 	 } // End IF Statement
 
 
@@ -418,11 +568,11 @@
 		// Arguments
 		$repeat = 100; 				// Number of maximum attachments to get
 		$photo_size = 'large';		// The WP "size" to use for the large image
-	
+
 		global $post;
-	
+
 		$output = array();
-	
+
 		$id = get_the_id();
 		$attachments = get_children( array(
 		'post_parent' => $id,
@@ -454,11 +604,11 @@
 	 */
 	function sf_add_lightbox_body_class ( $classes ) {
 		global $sf_options;
-	
+
 		if ( isset( $sf_options['sf_enable_lightbox'] ) && $sf_options['sf_enable_lightbox'] == 'true' ) {
 			$classes[] = 'has-lightbox';
 		}
-	
+
 		return $classes;
 	} // End sf_add_lightbox_body_class()
 	add_filter( 'body_class', 'sf_add_lightbox_body_class', 10 );
@@ -472,16 +622,16 @@
 	 */
 	function sf_load_prettyphoto () {
 		global $sf_options;
-	
+
 		if ( ! isset( $sf_options['sf_enable_lightbox'] ) || $sf_options['sf_enable_lightbox'] == 'false' ) { return; }
-	
+
 		$filter = current_filter();
-	
+
 		switch ( $filter ) {
 			case 'sf_add_javascript':
 				wp_enqueue_script( 'prettyPhoto' );
 			break;
-	
+
 			case 'sf_add_css':
 				wp_enqueue_style( 'prettyPhoto' );
 			break;
@@ -498,14 +648,14 @@
 	 * @return	void
 	 */
 	function sf_maps_contact_output($args){
-	
+
 		$key = get_option('sf_maps_apikey');
-	
+
 		// No More API Key needed
-	
+
 		if ( !is_array($args) )
 			parse_str( $args, $args );
-	
+
 		extract($args);
 		$mode = '';
 		$streetview = 'off';
@@ -522,9 +672,9 @@
 			$locale = ',locale :"'.$lang.'"';
 		}
 		$extra_params = ',{travelMode:G_TRAVEL_MODE_WALKING,avoidHighways:true '.$locale.'}';
-	
+
 		if(empty($map_height)) { $map_height = 250;}
-	
+
 		if(is_home() && !empty($featured_h) && !empty($featured_w)){
 		?>
 		<div id="single_map_canvas" style="width:<?php echo intval( $featured_w ); ?>px; height: <?php echo intval( $featured_h ); ?>px"></div>
@@ -536,13 +686,13 @@
 		<script type="text/javascript">
 			jQuery(document).ready(function(){
 				function initialize() {
-	
-	
+
+
 				<?php if($streetview == 'on'){ ?>
-	
-	
+
+
 				<?php } else { ?>
-	
+
 					<?php switch ($type) {
 							case 'G_NORMAL_MAP':
 								$type = 'ROADMAP';
@@ -560,7 +710,7 @@
 								$type = 'ROADMAP';
 								break;
 					} ?>
-	
+
 					var myLatlng = new google.maps.LatLng(<?php echo $geocoords; ?>);
 					var myOptions = {
 					  zoom: <?php echo $zoom; ?>,
@@ -571,14 +721,14 @@
 					  mapTypeId: google.maps.MapTypeId.<?php echo $type; ?>
 					};
 					var map = new google.maps.Map(document.getElementById("single_map_canvas"),  myOptions);
-	
+
 					<?php if($mode == 'directions'){ ?>
 					directionsPanel = document.getElementById("featured-route");
 					directions = new GDirections(map, directionsPanel);
 					directions.load("from: <?php echo esc_js( $from ); ?> to: <?php echo esc_js( $to ); ?>" <?php if($walking == 'on'){ echo $extra_params;} ?>);
 					<?php
 					} else { ?>
-	
+
 						<?php
 							$map_vars = array(
 								'the_title' => $marker_title,
@@ -588,14 +738,14 @@
 							);
 						?>
 						var mapData = <?php echo json_encode( $map_vars ); ?>;
-	
+
 						var root = mapData.root;
 						var callout = mapData.callout;
 						var the_link = mapData.the_link;
 						var the_title = mapData.the_title;
-	
+
 						var point = new google.maps.LatLng(<?php echo $geocoords; ?>);
-	
+
 					<?php
 					if(is_page()){
 						$custom = get_option('sf_cat_custom_marker_pages');
@@ -617,17 +767,17 @@
 					<?php
 					}
 						if(isset($_POST['sf_maps_directions_search'])){ ?>
-	
+
 						directionsPanel = document.getElementById("featured-route");
 						directions = new GDirections(map, directionsPanel);
 						directions.load("from: <?php echo htmlspecialchars($_POST['sf_maps_directions_search']); ?> to: <?php echo $address; ?>" <?php if($walking == 'on'){ echo $extra_params;} ?>);
-	
-	
-	
+
+
+
 						directionsDisplay = new google.maps.DirectionsRenderer();
 						directionsDisplay.setMap(map);
 						directionsDisplay.setPanel(document.getElementById("featured-route"));
-	
+
 						<?php if($walking == 'on'){ ?>
 						var travelmodesetting = google.maps.DirectionsTravelMode.WALKING;
 						<?php } else { ?>
@@ -645,12 +795,12 @@
 								directionsDisplay.setDirections(response);
 							}
 						});
-	
+
 						<?php } ?>
 					<?php } ?>
 				<?php } ?>
-	
-	
+
+
 				  }
 				  function handleNoFlash(errorCode) {
 					  if (errorCode == FLASH_UNAVAILABLE) {
@@ -658,27 +808,26 @@
 						return;
 					  }
 					 }
-	
-	
-	
+
+
+
 			initialize();
-	
+
 			});
 		jQuery(window).load(function(){
-	
+
 			var newHeight = jQuery('#featured-content').height();
 			newHeight = newHeight - 5;
 			if(newHeight > 300){
 				jQuery('#single_map_canvas').height(newHeight);
 			}
-	
+
 		});
-	
+
 		</script>
 
 	<?php
 	}
-
 
 
 	/**
@@ -689,11 +838,11 @@
 	 */
 	function sf_add_boxedlayout_body_class ( $classes ) {
 		global $sf_options;
-	
+
 		if ( isset( $sf_options['sf_style_disable'] ) && $sf_options['sf_style_disable'] != 'true' && isset( $sf_options['sf_layout_boxed'] ) && $sf_options['sf_layout_boxed'] == 'true' ) {
 			$classes[] = 'boxed-layout';
 		}
-	
+
 		return $classes;
 	} // End sf_add_boxedlayout_body_class()
 	add_filter( 'body_class', 'sf_add_boxedlayout_body_class', 10 );
@@ -714,7 +863,7 @@
 			if ( in_array( $version, $supported_versions ) && 'MSIE' == $agent && ( $version == $current_version ) ) {
 				$response = true;
 			}
-	
+
 			return $response;
 		} // End is_ie()
 	}
@@ -746,44 +895,26 @@
 	if ( ! function_exists( 'sf_archive_description' ) ) {
 		function sf_archive_description ( $echo = true ) {
 			do_action( 'sf_archive_description' );
-	
+
 			// Archive Description, if one is available.
 			$term_obj = get_queried_object();
-	
+
 			$description = '';
-	
+
 			if ( isset( $term_obj->term_id ) && isset( $term_obj->taxonomy ) ) {
 				$description = term_description( $term_obj->term_id, $term_obj->taxonomy );
 			}
-	
+
 			if ( isset( $description ) && '' != $description ) {
 				// Allow child themes/plugins to filter here ( 1: text in DIV and paragraph, 2: term object )
 				$description = apply_filters( 'sf_archive_description', '<div class="archive-description">' . $description . '</div><!--/.archive-description-->', $term_obj );
 			}
-	
+
 			if ( $echo != true ) { return $description; }
-	
+
 			echo $description;
 		} // End sf_archive_description()
 	}
-
-
-	/**
-	 * Add body class if Fixed Mobile width enabled
-	 *
-	 * @since	1.0
-	 * @return	void
-	 */
-	function sf_add_fixed_mobile_class ( $classes ) {
-		global $sf_options;
-	
-		if ( isset( $sf_options['sf_remove_responsive'] ) && $sf_options['sf_remove_responsive'] == 'true' ) {
-			$classes[] = 'fixed-mobile';
-		}
-	
-		return $classes;
-	} // End sf_add_fixed_mobile_class()
-	add_filter( 'body_class', 'sf_add_fixed_mobile_class', 10 );
 
 
 	/**
@@ -798,8 +929,6 @@
 		$menu_title = wp_get_nav_menu_object( $menus[$location] ) -> name;
 		return $menu_title;
 	}
-
-
 
 
 	/**
@@ -855,3 +984,5 @@
 	} // End sf_custom_post_edit()
 	add_action( 'sf_post_after', 'sf_custom_post_edit', 90 );
 	add_action( 'sf_page_after', 'sf_custom_post_edit', 100 );
+
+?>

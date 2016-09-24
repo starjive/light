@@ -20,7 +20,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	} // End sf_version_init()
 	add_action( 'init', 'sf_version_init', 10 );
 
-
 	/**
 	 * Return the Theme version number.
 	 *
@@ -35,7 +34,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		echo '<meta name="generator" content="Framework '. esc_attr( $data['sf_version'] ) .'" />' ."\n";
 	}
 
-
 	/**
 	 * Load the required Framework Files.
 	 *
@@ -44,7 +42,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	 */
 	$functions_path = get_template_directory() . '/app/backend/';
 	$classes_path = $functions_path . 'classes/';
-
 
 	/**
 	 * Load core classes for the Framework.
@@ -59,7 +56,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	require_once( $classes_path . 'settings.php' );                    // A class to handle all basic settings interactions.
 	require_once( $classes_path . 'meta.php' );                        // Meta box generator class.
 
-
 	/**
 	 * Returns the main instance of SF to prevent the need to use globals.
 	 *
@@ -72,7 +68,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	// Run the SF() function to generate the initial instance.
 	SF();
 
-
 	/**
 	 * Load the other Framework files.
 	 *
@@ -83,7 +78,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	require_once( $functions_path . 'setup.php' );						// Setup the Framework.
 	require_once( $functions_path . 'interface.php' );					// Administration interfaces.
 	require_once( $functions_path . 'hooks.php' );						// Contextual hooks.
-
 
 	/**
 	 * Load certain files only in the WordPress admin.
@@ -98,7 +92,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		require_once( $classes_path . 'screen-framework.php' );			// Framework screen class.
 		require_once( $classes_path . 'backup.php' );					// SF_Backup Class.
 	}
-
 
 	/**
 	 * Add or remove Generator meta tags.

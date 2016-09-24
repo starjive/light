@@ -1,6 +1,7 @@
 <?php
 // File Security Check
 if ( ! defined( 'ABSPATH' ) ) exit;
+
 /**
  * Hooks
  * All hooks registered by the Framework.

@@ -77,8 +77,8 @@
 /* 2.6 Footer */
 #footer {
   padding: 20px 0;
-  border-top: 1px solid #e6e6e6;
-  color: #999; }
+  color: #999;
+  }
 
 #footer #copyright {
 	width: 48%;

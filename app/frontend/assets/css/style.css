@@ -13,9 +13,8 @@
 @import 'partials/slider.css';										/* Slider */
 @import 'partials/utility.css';										/* Utility */
 
-@import 'partials/layouts/layouts-boxed.css';								/* Layouts - Boxed layout */
-@import 'partials/layouts/layouts-fixed.css';								/* Layouts - Fixed layout */
-@import 'partials/layouts/layouts-full-width.css';							/* Layouts - Full Width */
+@import 'partials/layouts/layouts-boxed.css';						/* Layouts - Boxed layout */
+@import 'partials/layouts/layouts-full-width.css';					/* Layouts - Full Width */
 
 @import 'partials/page-templates/template-business.css';			/* Page Templates - Business */
 @import 'partials/page-templates/template-contact-form.css';		/* Page Templates - Contact Page */

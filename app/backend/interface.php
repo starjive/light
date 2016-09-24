@@ -263,4 +263,5 @@ if ( ! function_exists( 'sf_critical_update_notice' ) ) {
 		if ( $html != '' ) { echo $html; }
 	} // End sf_critical_update_notice()
 }
+
 ?>

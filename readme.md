@@ -77,12 +77,10 @@ You are free to download Light for free and use on as many websites as you like.
 * Initial commit
 
 ##### 2016.06.22 - v1.60622
-* Fix - removes deprecated Google Maps API params, fixes console errors.
-* Fix - Google Maps API key fix.
-* Fix - WooCommerce Cart dropdown styling.
-* Fix - PHP 7 compatibility fixes
-* Fix - fixes string offset notice for Magazine Slider on homepage
-* Update - updates logic for layouts using a static page as the "Blog" page
+* **Fix** - PHP 7 compatibility fixes
+* **Fix** - Google Maps API key fix.
+* **Fix** - removes deprecated Google Maps API params, fixes console errors.
+* **Update** - updates logic for layouts using a static page
 
 ##### 2016.06.14 - v1.60614
 * **Dev** - Remove translation files except one light.pot
@@ -103,6 +101,7 @@ You are free to download Light for free and use on as many websites as you like.
 ##### 2016.06.09 - v1.60609
 * **Dev** - Remove all deprecate items.
 * **Dev** - Updates FontAwesome to version 4.5.0.
+* **Fix** - WooCommerce Cart dropdown styling.
 
 ##### 2016.06.08 - v1.60608
 * **Fix** - Error on Appearance > Template Contact Form.

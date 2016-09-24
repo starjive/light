@@ -1,4 +1,6 @@
 <?php
+// File Security Check
+if ( ! defined( 'ABSPATH' ) ) exit;
 
 $sf_options = get_option( 'sf_options' ); 
 
@@ -49,11 +51,6 @@ add_action( 'wp_head', 'sf_subscribe_connect_action', 10 );
 
 // Optional Top Navigation (WP Menus)
 add_action( 'sf_top', 'sf_top_navigation', 10 );
-
-// Remove responsive design
-if ( isset( $sf_options['sf_remove_responsive'] ) && $sf_options['sf_remove_responsive'] == 'true' ) {
-	add_action( 'init', 'sf_remove_responsive_design', 10 );
-}
 
 // Remove the banner warning about static home page
 if ( is_admin() && current_user_can( 'manage_options' ) && ( 0 < intval( get_option( 'page_on_front' ) ) ) ) {
@@ -413,7 +410,7 @@ function sf_custom_styling() {
 						   'sf_font_post_title', 'sf_font_post_meta', 'sf_font_post_text', 'sf_font_post_more', 'sf_post_more_border_top', 'sf_post_more_border_bottom',
 						   'sf_post_comments_bg', 'sf_post_author_border_top', 'sf_post_author_border_bottom', 'sf_post_author_border_lr', 'sf_post_author_border_radius',
 						   'sf_post_author_bg', 'sf_pagenav_font', 'sf_pagenav_bg', 'sf_pagenav_border_top', 'sf_pagenav_border_bottom', 'sf_widget_font_title',
-						   'sf_widget_font_text', 'sf_widget_padding_tb', 'sf_widget_padding_lr', 'sf_footer_widget_bg', 'sf_widget_bg', 'sf_widget_border', 'sf_widget_title_border', 'sf_widget_border_radius',
+						   'sf_widget_font_text', 'sf_widget_padding_tb', 'sf_widget_padding_lr', 'sf_footer_widget_bg', 'sf_footer_widget_border_top', 'sf_footer_widget_border_bottom', 'sf_widget_bg', 'sf_widget_border', 'sf_widget_title_border', 'sf_widget_border_radius',
 						   'sf_widget_tabs_bg', 'sf_widget_tabs_bg_inside', 'sf_widget_tabs_font', 'sf_widget_tabs_font_meta', 'sf_nav_bg', 'sf_nav_font', 'sf_nav_hover', 'sf_nav_hover_bg',
 						   'sf_nav_divider_border', 'sf_nav_dropdown_border', 'sf_nav_border_lr', 'sf_nav_border_radius', 'sf_nav_border_top', 'sf_nav_border_bot', 'sf_nav_margin_top',
 						   'sf_nav_margin_bottom', 'sf_top_nav_bg', 'sf_top_nav_hover', 'sf_top_nav_hover_bg', 'sf_top_nav_font', 'sf_footer_font', 'sf_footer_link_color', 'sf_footer_link_hover_color', 'sf_footer_bg', 'sf_footer_border_top',
@@ -454,7 +451,7 @@ function sf_custom_styling() {
 		if ( $sf_layout_content_padding_top <> '' || $sf_layout_content_padding_right <> '' || $sf_layout_content_padding_bottom <> '' || $sf_layout_content_padding_left <> '' )
 			$output .= '@media only screen and (min-width: 768px) { .boxed-layout #header, .boxed-layout #content, .boxed-layout #footer-widgets, .boxed-layout #footer, .full-width #header, .full-width #content, .full-width #footer-widgets, .full-width #footer { padding-left: '.$sf_layout_content_padding_left.'em; padding-right: '.$sf_layout_content_padding_right.'em; } #content { padding-top: '.$sf_layout_content_padding_top.'em; padding-bottom: '.$sf_layout_content_padding_bottom.'em; } }'. "\n";
 		if ( $sf_layout_content_mobile_padding_top <> '' || $sf_layout_content_mobile_padding_right <> '' || $sf_layout_content_mobile_padding_bottom <> '' || $sf_layout_content_mobile_padding_left <> '' )
-			$output .= '@media only screen and (max-width: 767px) { .full-width #header, .full-width #content, .full-width #footer-widgets, .full-width #footer, #content { padding-left: '.$sf_layout_content_mobile_padding_left.'em; padding-right: '.$sf_layout_content_mobile_padding_right.'em; } #content { padding-top: '.$sf_layout_content_mobile_padding_top.'em; padding-bottom: '.$sf_layout_content_mobile_padding_bottom.'em; } }'. "\n";	
+			$output .= '@media only screen and (max-width: 767px) { .boxed-layout #header, .boxed-layout #content, .boxed-layout #footer-widgets, .boxed-layout #footer, .full-width #header, .full-width #content, .full-width #footer-widgets, .full-width #footer, #content { padding-left: '.$sf_layout_content_mobile_padding_left.'em; padding-right: '.$sf_layout_content_mobile_padding_right.'em; } #content { padding-top: '.$sf_layout_content_mobile_padding_top.'em; padding-bottom: '.$sf_layout_content_mobile_padding_bottom.'em; } }'. "\n";	
 
 		// General styling
 		if ($sf_link_color)
@@ -662,6 +659,12 @@ function sf_custom_styling() {
 
 		if ( $sf_footer_widget_bg )
 			$output .= '#footer-widgets {background-color:'.$sf_footer_widget_bg.'}' . "\n";
+			
+		if ( $sf_footer_widget_border_top )
+			$output .= '#footer-widgets {border-top:'.$sf_footer_widget_border_top["width"].'px '.$sf_footer_widget_border_top["style"].' '.$sf_footer_widget_border_top["color"].'}' . "\n";
+			
+		if ( $sf_footer_widget_border_bottom )
+			$output .= '#footer-widgets {border-bottom:'.$sf_footer_widget_border_bottom["width"].'px '.$sf_footer_widget_border_bottom["style"].' '.$sf_footer_widget_border_bottom["color"].'}' . "\n";
 
 		//Navigation
 		global $is_IE;
@@ -2118,26 +2121,6 @@ function sf_enqueue_custom_styling () {
 
 
 	/**
-	 * Function to optionally remove responsive design and load in fallback CSS styling.
-	 * Trigger items for removing responsive design from framework.
-	 *
-	 * @since	1.0
-	 * @return	void
-	 */
-	if ( ! function_exists( 'sf_remove_responsive_design' ) ) {
-		function sf_remove_responsive_design () {
-			remove_action( 'wp_head', 'sf_load_site_width_css', 9 );
-			// Load in CSS file for non-responsive layouts.
-			wp_enqueue_style( 'non-responsive' );
-			// Load non-responsive site width CSS.
-			add_action( 'wp_print_scripts', 'sf_load_site_width_css_nomedia', 10 );
-			// Remove mobile viewport scale meta tag
-			remove_action( 'wp_head', 'sf_load_responsive_meta_tags', 1 );
-		} // End sf_remove_responsive_design()
-	}
-
-
-	/**
 	 * Load the layout width CSS without a media query wrapping it.
 	 *
 	 * @since	1.0
@@ -2154,45 +2137,10 @@ function sf_enqueue_custom_styling () {
 		.col-full, #wrapper { width: <?php echo intval( $layout_width ); ?>px; max-width: <?php echo intval( $layout_width ); ?>px; }
 		#inner-wrapper { padding: 0; }
 		body.full-width #header, #nav-container, body.full-width #content, body.full-width #footer-widgets, body.full-width #footer { padding-left: 0; padding-right: 0; }
-		body.fixed-mobile #top, body.fixed-mobile #header-container, body.fixed-mobile #footer-container, body.fixed-mobile #nav-container, body.fixed-mobile #footer-widgets-container { min-width: <?php echo intval( $layout_width ); ?>px; padding: 0 1em; }
 		body.full-width #content { width: auto; padding: 0 1em;}</style>
 		<?php
 		} // End sf_load_site_width_css_nomedia()
 	}
-
-
-	/**
-	 * Trigger the removal of the responsive design in framework. Must be hooked onto "init".
-	 *
-	 * @uses	sf_remove_responsive_design()
-	 * @since	1.0
-	 * @return	void
-	 */
-	if ( ! function_exists( 'sf_load_responsive_design_removal' ) ) {
-		function sf_load_responsive_design_removal () {
-			add_action( 'wp_print_styles', 'sf_remove_responsive_design', 10 );
-		} // End sf_load_responsive_design_removal()
-	}
-
-
-	/**
-	 * Load non-responsive.css for IE8.
-	 *
-	 * @since	1.0
-	 * @return	void
-	 */
-	if ( ! function_exists( 'sf_load_non_responsive_css' ) ) {
-		function sf_load_non_responsive_css() {
-			// Load conditional CSS for IE8
-			echo '<!--[if lt IE 9]>'. "\n";
-			echo '<link href="'. esc_url( get_template_directory_uri() . '/app/css/non-responsive.css' ) . '" rel="stylesheet" type="text/css" />' . "\n";
-			// Load the site width in addition to max-width to make it fixed
-			sf_load_site_width_css_nomedia();
-			echo '<![endif]-->'. "\n";
-		}
-	}
-	add_action( 'wp_head', 'sf_load_non_responsive_css', 8 );
-
 
 	/**
 	 * Adjust the homepage query, if using the "Magazine" page template as the homepage.
@@ -2218,7 +2166,6 @@ function sf_enqueue_custom_styling () {
 		} // End sf_modify_magazine_homepage_query()
 	}
 	add_filter( 'pre_get_posts', 'sf_modify_magazine_homepage_query' );
-
 
 
 	/**
@@ -2469,7 +2416,8 @@ function sf_enqueue_custom_styling () {
 	if ( isset( $sf_options[ 'sf_wp_remove_customize_page' ] ) && $sf_options[ 'sf_wp_remove_customize_page' ] == 'true' ) {
 		add_action( 'admin_menu', 'wp_remove_customize_page');
 	}	
-	
+
+
 	/**
 	 * Remove items from WordPress Toolbar.
 	 * @since	1.0
@@ -2482,6 +2430,82 @@ function sf_enqueue_custom_styling () {
 	}
 	if ( isset( $sf_options[ 'sf_wp_remove_toolbar_items' ] ) && $sf_options[ 'sf_wp_remove_toolbar_items' ] == 'true' ) {
 		add_action( 'admin_bar_menu', 'wp_remove_toolbar_items', 999 );
+	}
+
+
+	/**
+	 * Remove Emojis.
+	 * @since	1.0
+	 * @return	void
+	 */
+	if ( isset( $sf_options[ 'sf_wp_remove_dns_prefetch' ] ) && $sf_options[ 'sf_wp_remove_dns_prefetch' ] == 'true' ) {
+		remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+		remove_action( 'wp_print_styles', 'print_emoji_styles' );
+	}
+
+
+	/**
+	 * Remove DNS Prefetch.
+	 * @since	1.0
+	 * @return	void
+	 */
+	if ( isset( $sf_options[ 'sf_wp_remove_emojis' ] ) && $sf_options[ 'sf_wp_remove_emojis' ] == 'true' ) {
+		remove_action( 'wp_head', 'wp_resource_hints', 2 );
+	}
+
+
+	/**
+	 * Remove REST API.
+	 * @since	1.0
+	 * @return	void
+	 */
+	if ( isset( $sf_options[ 'sf_wp_remove_rest_api' ] ) && $sf_options[ 'sf_wp_remove_rest_api' ] == 'true' ) {
+		// Disable REST API link tag
+		remove_action( 'wp_head', 'rest_output_link_wp_head', 10 );
+		// Disable oEmbed Discovery Links
+		remove_action( 'wp_head', 'wp_oembed_add_discovery_links', 10 );
+		// Disable REST API link in HTTP headers
+		remove_action( 'template_redirect', 'rest_output_link_header', 11, 0 );
+	}
+
+
+	/**
+	 * Remove canonical URLs.
+	 * @since	1.0
+	 * @return	void
+	 */
+	if ( isset( $sf_options[ 'sf_wp_remove_canonical_urls' ] ) && $sf_options[ 'sf_wp_remove_canonical_urls' ] == 'true' ) {
+		remove_action( 'wp_head', 'rel_canonical' );
+	}
+
+
+	/**
+	 * Remove Shortlink.
+	 * @since	1.0
+	 * @return	void
+	 */
+	if ( isset( $sf_options[ 'sf_wp_remove_shortlink' ] ) && $sf_options[ 'sf_wp_remove_shortlink' ] == 'true' ) {
+		remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );
+	}
+
+
+	/**
+	 * Remove Really Simple Discovery.
+	 * @since	1.0
+	 * @return	void
+	 */
+	if ( isset( $sf_options[ 'sf_wp_remove_rsd' ] ) && $sf_options[ 'sf_wp_remove_rsd' ] == 'true' ) {
+		remove_action ('wp_head', 'rsd_link');
+	}
+
+
+	/**
+	 * Remove Windows Live Writer.
+	 * @since	1.0
+	 * @return	void
+	 */
+	if ( isset( $sf_options[ 'sf_wp_remove_wlw' ] ) && $sf_options[ 'sf_wp_remove_wlw' ] == 'true' ) {
+		remove_action( 'wp_head', 'wlwmanifest_link' );
 	}
 
 

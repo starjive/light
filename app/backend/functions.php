@@ -1,8 +1,7 @@
 <?php
 // File Security Check
 if ( ! defined( 'ABSPATH' ) ) exit;
-?>
-<?php
+
 /*-----------------------------------------------------------------------------------
 
 TABLE OF CONTENTS

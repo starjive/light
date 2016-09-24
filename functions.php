@@ -1,4 +1,9 @@
 <?php
+/**
+ * Light functions.
+ *
+ * @package light
+ */
 
 	/**
 	 * Set path to Framework and theme specific functions.
@@ -9,7 +14,6 @@
 	$functions_path = get_template_directory() . '/app/backend/';
 	$includes_path = get_template_directory() . '/app/frontend/';
 
-
 	/**
 	 * Framework init.
 	 *
@@ -18,7 +22,6 @@
 	 */
 	require_once ( $functions_path . 'init.php' );	// Framework Init
 
-
 	/**
 	 * Load the theme-specific files, with support for overriding via a child theme.
 	 *
@@ -26,20 +29,17 @@
 	 * @return	void
 	 */
 	$includes = array(
-		'app/frontend/options.php', 									// Options panel settings and custom settings
-		'app/frontend/functions.php', 									// Custom theme functions
+		'app/frontend/options.php', 									// Options settings & custom settings
+		'app/frontend/functions.php', 									// Theme functions
 		'app/frontend/actions.php', 									// Theme actions & user defined hooks
 		'app/frontend/comments.php', 									// Custom comments/pingback loop
-		'app/frontend/script-style.php', 								// Load JavaScript via wp_enqueue_script
-		'app/frontend/plugin-integrations.php',							// Plugin integrations
-		'app/frontend/widgetized-areas.php', 							// Widgetized areas
+		'app/frontend/enqueue.php', 									// Load JavaScript & Styles
+		'app/frontend/integrations.php',								// Plugin integrations
 		'app/frontend/widgets.php',										// Widgets
-		'app/frontend/advanced.php',									// Advanced Theme Functions
-		'app/frontend/shortcodes.php',	 								// Custom theme shortcodes
-		'app/frontend/extensions/meta/meta.php',						// Meta Manager
-		'app/frontend/extensions/hooks/hooks.php',						// Hook Manager
+		'app/frontend/shortcodes.php',	 								// Theme shortcodes
+		'app/frontend/extensions/meta/meta.php',						// Extensions Meta Manager
+		'app/frontend/extensions/hooks/hooks.php',						// Extensions Hook Manager
 	);
-
 
 	/**
 	 * Allow child themes/plugins to add widgets to be loaded.
@@ -48,7 +48,6 @@
 	 * @return	void
 	 */
 	$includes = apply_filters( 'sf_includes', $includes );
-	
 	foreach ( $includes as $i ) {
 		locate_template( $i, true );
 	}
