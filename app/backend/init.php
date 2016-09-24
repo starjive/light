@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	 * @return	string
 	 */
 	function sf_get_version () {
-		return '6.2.5';
+		return '1.60908';
 	}
 
 	function sf_version_init () {

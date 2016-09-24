@@ -1937,6 +1937,7 @@ if (!function_exists( 'sf_options')) {
 		$options[] = array( 'name' => __( 'Cookie expiry', 'sfwp-locale' ),
 							'desc' => __( 'The ammount of time that cookie should be stored for.', 'sfwp-locale' ),
 							'id' => $shortname.'_cookie_expiry',
+							'std' => '31536000',
 							'type' => 'select2',
 							'options' => array( '86400' => __( '1 day', 'sfwp-locale' ), '604800' => __( '1 week', 'sfwp-locale' ), '2592000' => __( '1 month', 'sfwp-locale' ), '7862400' => __( '3 months', 'sfwp-locale' ), '15811200' => __( '6 months', 'sfwp-locale' ), '31536000' => __( '1 year', 'sfwp-locale' ), '31337313373' => __( 'infinity', 'sfwp-locale' ) )
 							);
