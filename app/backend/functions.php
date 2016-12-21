@@ -2024,51 +2024,78 @@ if ( !function_exists( 'sf_encoding_convert') ) {
 	}
 }
 
-/*---------------------------------------------------------------------------------*/
-/* WP Login logo */
-/*---------------------------------------------------------------------------------*/
-if ( !function_exists( 'sf_custom_login_logo' ) ) {
-	function sf_custom_login_logo() {
-		$logo = get_option( 'sf_custom_login_logo' );
-	    $dimensions = @getimagesize( $logo );
-	    $background_size = 'background-size: auto;';
-	    if ( 0 >= $dimensions[1] ) {
-	    	$dimensions[1] = '67';
-	    	$background_size = '';
-	    }
 
-		echo '<style type="text/css">body #login h1 a { background-image:url( ' . esc_url( $logo ) . ' ); height: ' . intval( $dimensions[1] ) . 'px; width: auto; ' . $background_size . ' }</style>';
-	} // End sf_custom_login_logo()
-	if ( '' != get_option( 'sf_custom_login_logo') ) {
-		add_action( 'login_head', 'sf_custom_login_logo' );
+	/**
+	 * Enabling uploads of SVG files in WordPress
+	 *
+	 * @since	1.0
+	 * @return	void
+	 */
+	function add_svg_to_upload_mimes( $upload_mimes ) {
+		$upload_mimes['svg'] = 'image/svg+xml';
+		$upload_mimes['svgz'] = 'image/svg+xml';
+		return $upload_mimes;
 	}
-}
+	add_filter( 'upload_mimes', 'add_svg_to_upload_mimes', 10, 1 );
 
-/*---------------------------------------------------------------------------------*/
-/* WP Login logo URL */
-/*---------------------------------------------------------------------------------*/
-if ( ! function_exists( 'sf_custom_login_logo_url' ) ) {
-	function sf_custom_login_logo_url( $text ) {
-		return get_option( 'sf_custom_login_logo_url' ); // Escaping via esc_url() is done in wp-login.php.
-	} // End sf_custom_login_logo_url()
 
-	if ( '' != get_option( 'sf_custom_login_logo_url' ) ) {
-		add_filter( 'login_headerurl', 'sf_custom_login_logo_url', 10 );
+	/**
+	 * WordPress Login logo
+	 *
+	 * @since	1.0
+	 * @return	void
+	 */
+	if ( !function_exists( 'sf_custom_login_logo' ) ) {
+		function sf_custom_login_logo() {
+			$logo = get_option( 'sf_custom_login_logo' );
+			$dimensions = @getimagesize( $logo );
+			$background_size = 'background-size: auto;';
+			if ( 0 >= $dimensions[1] ) {
+				$dimensions[1] = '67';
+				$background_size = '';
+			}
+	
+			echo '<style type="text/css">body #login h1 a { background-image:url( ' . esc_url( $logo ) . ' ); height: ' . intval( $dimensions[1] ) . 'px; width: auto; ' . $background_size . ' }</style>';
+		} // End sf_custom_login_logo()
+		if ( '' != get_option( 'sf_custom_login_logo') ) {
+			add_action( 'login_head', 'sf_custom_login_logo' );
+		}
 	}
-}
 
-/*---------------------------------------------------------------------------------*/
-/* WP Login logo title */
-/*---------------------------------------------------------------------------------*/
-if ( ! function_exists( 'sf_custom_login_logo_title' ) ) {
-	function sf_custom_login_logo_title( $text ) {
-		return get_option( 'sf_custom_login_logo_title' ); // Escaping via esc_attr() is done in wp-login.php.
-	} // End sf_custom_login_logo_title()
 
-	if ( '' != get_option( 'sf_custom_login_logo_title' ) ) {
-		add_filter( 'login_headertitle', 'sf_custom_login_logo_title', 10 );
+	/**
+	 * WordPress Login logo URL
+	 *
+	 * @since	1.0
+	 * @return	void
+	 */
+	if ( ! function_exists( 'sf_custom_login_logo_url' ) ) {
+		function sf_custom_login_logo_url( $text ) {
+			return get_option( 'sf_custom_login_logo_url' ); // Escaping via esc_url() is done in wp-login.php.
+		} // End sf_custom_login_logo_url()
+	
+		if ( '' != get_option( 'sf_custom_login_logo_url' ) ) {
+			add_filter( 'login_headerurl', 'sf_custom_login_logo_url', 10 );
+		}
 	}
-}
+
+
+	/**
+	 * WordPress Login logo title
+	 *
+	 * @since	1.0
+	 * @return	void
+	 */
+	if ( ! function_exists( 'sf_custom_login_logo_title' ) ) {
+		function sf_custom_login_logo_title( $text ) {
+			return get_option( 'sf_custom_login_logo_title' ); // Escaping via esc_attr() is done in wp-login.php.
+		} // End sf_custom_login_logo_title()
+	
+		if ( '' != get_option( 'sf_custom_login_logo_title' ) ) {
+			add_filter( 'login_headertitle', 'sf_custom_login_logo_title', 10 );
+		}
+	}
+
 
 /*-----------------------------------------------------------------------------------*/
 /* sf_pagination() - Custom loop pagination function  */

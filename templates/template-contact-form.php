@@ -187,7 +187,7 @@ jQuery(document).ready(function() {
                         <section class="entry">
 	                        <?php the_content(); ?>
 
-                			<div class="location-twitter">
+                			<div class="contact-information">
     							<?php if ( isset( $sf_options['sf_contact_panel'] ) && $sf_options['sf_contact_panel'] == 'true' ) { ?>
 						    	<section id="office-location"<?php if ( ( isset($sf_options['sf_contact_subscribe_and_connect']) && $sf_options['sf_contact_subscribe_and_connect'] == 'true' ) ) { ?> class="col-left"<?php } ?>>
 									<?php if (isset($sf_options['sf_contact_title'])) { ?><h3><?php echo stripslashes( $sf_options['sf_contact_title'] ); ?></h3><?php } ?>
@@ -206,7 +206,7 @@ jQuery(document).ready(function() {
 
 						    	<div class="clear"></div>
 
-						    	</div><!-- /.location-twitter -->
+						    	</div><!-- /.contact-information -->
 
                         </section>
 

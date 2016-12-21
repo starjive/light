@@ -18,6 +18,12 @@
   position: relative;
   background-size: auto; }
 
+/* Make optional */
+#logo {
+	width: 180px;
+	height: auto;
+}
+
 #logo .site-title {
   line-height: inherit;
   margin-bottom: 5px;
@@ -102,6 +108,11 @@
   padding-top: 20px; }
 
 @media only screen and (max-width: 767px) {
+
+	#logo {
+	margin: 0 auto;
+	}
+	
   #wrapper {
     overflow-y: visible;
     overflow-x: hidden; }
@@ -125,9 +136,10 @@
 	
 @media only screen and (min-width: 768px) {
   /* Header */
-  #logo {
-    float: left;
-    max-width: 100%; }
+	#logo {
+		float: left;
+		max-width: 100%;
+	}
 
   .header-widget {
     float: right;

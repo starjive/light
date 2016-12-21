@@ -136,6 +136,9 @@ body.ie7 #loopedSlider .pagination li {
   display: inline;
   zoom: 1; }
 
+div.widget #loopedSlider ul.flex-direction-nav {
+  list-style: none !important; }
+  
 #loopedSlider a.flex-prev {
   position: absolute;
   top: 0;

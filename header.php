@@ -12,7 +12,9 @@
 <meta charset="<?php echo esc_attr( get_bloginfo( 'charset' ) ); ?>" />
 <title><?php sf_title(); ?></title>
 <?php sf_meta(); ?>
-<link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>" />
+<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<?php endif; ?>
 <?php wp_head(); ?>
 <?php sf_head(); ?>
 </head>

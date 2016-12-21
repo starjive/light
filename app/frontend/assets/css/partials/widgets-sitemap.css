@@ -1,37 +1,59 @@
-
-.menu-sitemap-container {
-	display: table;
-	table-layout: fixed;
-	width: 100%;
-}
-
-.menu-sitemap-container ul {
-	display: table-row;
-}
-
-.menu-sitemap-container ul li {
-	display: table-cell;
-	font-size: 1.1em;
-	font-weight: bold;
-}
-
-.menu-sitemap-container ul li a {
-	display: block;
-}
-
-.menu-sitemap-container .sub-menu li {
-	display: inline;
-	font-size: .8em;
-	font-weight: normal;
-}
-.menu-sitemap-container .sub-menu li a {
-	display: block;
-}
-	
 @media only screen and (min-width: 768px) {
+
+	.menu-sitemap-container {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+	}
+	
+	.menu-sitemap-container ul {
+		display: table-row;
+	}
+	
+	.menu-sitemap-container ul li {
+		display: table-cell;
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+	
+	.menu-sitemap-container ul li a {
+		display: block;
+	}
+	
+	.menu-sitemap-container .sub-menu li {
+		display: inline;
+		font-size: .8em;
+		font-weight: normal;
+	}
+	.menu-sitemap-container .sub-menu li a {
+		display: block;
+	}
 
 }
 
 @media only screen and (max-width: 767px) {
+
+	.menu-sitemap-container {
+		width: 100%;
+	}
+	
+	.menu-sitemap-container ul {
+		list-style-type: none;
+	}
+	
+	.menu-sitemap-container ul li {
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+	
+	.menu-sitemap-container ul li a {
+	}
+	
+	.menu-sitemap-container .sub-menu li {
+		font-size: .8em;
+		font-weight: normal;
+	}
+	.menu-sitemap-container .sub-menu li a {
+	}
 
 }

@@ -10,9 +10,8 @@
   position: absolute;
   top: 0;
   min-height: 100%;
-  z-index: 9000;
+  z-index: 9;
   padding-top: 4.236em;
-  margin-bottom: 3em;
   font: 300 14px/1.2 "Helvetica Neue", sans-serif;
   background: #f0f0f0;
   display: none; }
@@ -280,7 +279,7 @@ ul.nav ul li.current-menu-item a,
     position: absolute;
     top: 100%;
     left: -9999em;
-    z-index: 9999;
+    z-index: 10;
     margin: 0;
     padding: 0.4em 0; }
 

@@ -4,76 +4,76 @@
 	max-width: inherit;
 }
 
-.page-template-template-contact-form .location-twitter {
+.page-template-template-contact-form .contact-information {
 	margin: 0 0 1em;
 	padding: 0 0 1.618em;
 	border-bottom: 1px solid #e6e6e6;
 }
 
-.page-template-template-contact-form .location-twitter .col-left {
+.page-template-template-contact-form .contact-information .col-left {
 	float: none;
 }
 
-.page-template-template-contact-form .location-twitter ul {
+.page-template-template-contact-form .contact-information ul {
 	margin: 0;
 	padding: 0;
 }
 
-.page-template-template-contact-form .location-twitter ul li {
+.page-template-template-contact-form .contact-information ul li {
 	list-style: none;
 	padding: 0;
 }
 
-.page-template-template-contact-form .location-twitter #office-location {
+.page-template-template-contact-form .contact-information #office-location {
 	margin: 0 0 1.618em;
 }
 
-.page-template-template-contact-form .location-twitter #office-location a {
+.page-template-template-contact-form .contact-information #office-location a {
 	text-decoration: underline;
 }
 
-.page-template-template-contact-form .location-twitter #office-location ul li {
+.page-template-template-contact-form .contact-information #office-location ul li {
 	margin: 0 0 1em;
 }
 
-.page-template-template-contact-form .location-twitter .contact-social {
+.page-template-template-contact-form .contact-information .contact-social {
 	float: none;
 }
 
-.page-template-template-contact-form .location-twitter .contact-social #twitter {
+.page-template-template-contact-form .contact-information .contact-social #twitter {
 	margin: 0 0 1.618em;
 }
 
-.page-template-template-contact-form .location-twitter .contact-social #twitter ul li {
+.page-template-template-contact-form .contact-information .contact-social #twitter ul li {
 	padding-bottom: 10px;
 }
 
-.page-template-template-contact-form .location-twitter .contact-social #twitter ul li a.time {
+.page-template-template-contact-form .contact-information .contact-social #twitter ul li a.time {
 	color: #7b7b7b;
 }
 
-.page-template-template-contact-form .location-twitter .contact-social #connect {
+.page-template-template-contact-form .contact-information .contact-social #connect {
 	background: none;
 	border: none;
 	padding: 0;
 	margin: 1em 0 0;
 }
 
-.page-template-template-contact-form .location-twitter .contact-social #connect div p {
+.page-template-template-contact-form .contact-information .contact-social #connect div p {
 	display: none;
 }
 
-.page-template-template-contact-form .location-twitter .contact-social #connect img {
+.page-template-template-contact-form .contact-information .contact-social #connect img {
 	border: none;
 	padding: 0;
 	background: none;
 }
 
-.page-template-template-contact-form .location-twitter .contact-social #connect h3 {
+.page-template-template-contact-form .contact-information .contact-social #connect h3 {
 	display: none;
 }
 
-.page-template-template-contact-form .location-twitter .contact-social #connect .social {
+.page-template-template-contact-form .contact-information .contact-social #connect .social {
 	float: none;
 	clear: both;
 }
@@ -170,18 +170,18 @@
 
 @media only screen and (min-width: 768px) {
 
-	.page-template-template-contact-form .location-twitter .col-left {
+	.page-template-template-contact-form .contact-information .col-left {
 		float: left;
 	}
-	.page-template-template-contact-form .location-twitter #office-location {
+	.page-template-template-contact-form .contact-information #office-location {
 		width: 48%;
 		margin: 0 1em 0 0;
 	}
-	.page-template-template-contact-form .location-twitter .contact-social {
+	.page-template-template-contact-form .contact-information .contact-social {
 		float: left;
 		width: 48%;
 	}
-	.page-template-template-contact-form .location-twitter .contact-social #twitter {
+	.page-template-template-contact-form .contact-information .contact-social #twitter {
 		margin: 0;
 	}
 	#contact-page ol.forms li.buttons .submit {

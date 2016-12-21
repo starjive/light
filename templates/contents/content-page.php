@@ -38,11 +38,7 @@ sf_page_before();
 
 	<section class="entry">
 	    <?php
-	    	if ( ! is_singular() ) {
-	    		the_excerpt();
-	    	} else {
-	    		the_content( __( 'Continue Reading &rarr;', 'sfwp-locale' ) );
-	    	}
+	    	the_content( __( 'Continue Reading &rarr;', 'sfwp-locale' ) );
 	    	wp_link_pages( $page_link_args );
 	    ?>
 	</section><!-- /.entry -->

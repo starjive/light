@@ -12,13 +12,13 @@ class Widget_Announce extends WP_Widget {
 	function __construct() {
 
 		/* Widget settings. */
-		$widget_ops = array( 'classname' => 'announce-widget', 'description' => __( 'Use this widget to add any type of Ad as a widget.', 'sfwp-locale' ) );
+		$widget_ops = array( 'classname' => 'announce-widget', 'description' => __( 'Use this widget to add any type of announcement or ads as a widget.', 'sfwp-locale' ) );
 
 		/* Widget control settings. */
 		$control_ops = array( 'width' => 250, 'height' => 350, 'id_base' => 'announce-widget' );
 
 		/* Create the widget. */
-		parent::__construct( 'announce-widget', __( 'Announce/Ad', 'sfwp-locale' ), $widget_ops, $control_ops );
+		parent::__construct( 'announce-widget', __( 'Announce/Ads', 'sfwp-locale' ), $widget_ops, $control_ops );
 
 	} // End Constructor
 
