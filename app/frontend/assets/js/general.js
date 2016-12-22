@@ -1,6 +1,6 @@
-/*-----------------------------------------------------------------------------------*/
-/* Run scripts on jQuery(document).ready() */
-/*-----------------------------------------------------------------------------------*/
+/*
+ * Run scripts on jQuery(document).ready()
+ */
 jQuery(document).ready(function(){
 
 	// FitVids - Responsive Videos
@@ -12,10 +12,9 @@ jQuery(document).ready(function(){
 	// Add class to parent menu items with JS until WP does this natively
 	jQuery( 'ul.sub-menu, ul.children' ).parent( 'li' ).addClass( 'parent' );
 
-/*-----------------------------------------------------------------------------------*/
-/* Navigation */
-/*-----------------------------------------------------------------------------------*/
-
+	/*
+	 * Navigation
+	 */
 	// Fix dropdowns in Android
 	if ( navigator.userAgent.match(/Android/i) && window.innerWidth >= 768 ) {
 		jQuery( '.nav li:has(ul)' ).doubleTapToGo();
@@ -94,32 +93,62 @@ jQuery(document).ready(function(){
 		}
 	}
 
-/*-----------------------------------------------------------------------------------*/
-/* Add rel="lightbox" to image links if the lightbox is enabled */
-/*-----------------------------------------------------------------------------------*/
+	/*
+	 * Add rel="lightbox" to image links if the lightbox is enabled
+	 */
+	if ( jQuery( 'body' ).hasClass( 'has-lightbox' ) ) {
+		jQuery( 'a[href$=".jpg"], a[href$=".jpeg"], a[href$=".gif"], a[href$=".png"]' ).each( function () {
+			var imageTitle = '';
+			if ( jQuery( this ).next().hasClass( 'wp-caption-text' ) ) {
+				imageTitle = jQuery( this ).next().text();
+			}
+	
+			if ( '' !== imageTitle ) {
+				jQuery( this ).attr( 'title', imageTitle );
+			}
+	
+			if ( jQuery( this ).parents( '.gallery' ).length ) {
+				var galleryID = jQuery( this ).parents( '.gallery' ).attr( 'id' );
+				jQuery( this ).attr( 'rel', 'lightbox[' + galleryID + ']' );
+			} else {
+				jQuery( this ).attr( 'rel', 'lightbox' );
+			}
+		});
+	
+		jQuery( 'a[rel^="lightbox"]' ).prettyPhoto({social_tools: false});
+	}
 
-if ( jQuery( 'body' ).hasClass( 'has-lightbox' ) ) {
-	jQuery( 'a[href$=".jpg"], a[href$=".jpeg"], a[href$=".gif"], a[href$=".png"]' ).each( function () {
-		var imageTitle = '';
-		if ( jQuery( this ).next().hasClass( 'wp-caption-text' ) ) {
-			imageTitle = jQuery( this ).next().text();
-		}
-
-		if ( '' !== imageTitle ) {
-			jQuery( this ).attr( 'title', imageTitle );
-		}
-
-		if ( jQuery( this ).parents( '.gallery' ).length ) {
-			var galleryID = jQuery( this ).parents( '.gallery' ).attr( 'id' );
-			jQuery( this ).attr( 'rel', 'lightbox[' + galleryID + ']' );
-		} else {
-			jQuery( this ).attr( 'rel', 'lightbox' );
-		}
+	/*
+	 * Replace all SVG images with inline SVG
+	 */
+	jQuery('img.logotype').each(function(){
+		var $img = jQuery(this);
+		var imgID = $img.attr('id');
+		var imgClass = $img.attr('class');
+		var imgURL = $img.attr('src');
+	
+		jQuery.get(imgURL, function(data) {
+			// Get the SVG tag, ignore the rest
+			var $svg = jQuery(data).find('svg');
+	
+			// Add replaced image's ID to the new SVG
+			if(typeof imgID !== 'undefined') {
+				$svg = $svg.attr('id', imgID);
+			}
+			// Add replaced image's classes to the new SVG
+			if(typeof imgClass !== 'undefined') {
+				$svg = $svg.attr('class', imgClass+' replaced-svg');
+			}
+			
+			// Remove any invalid XML tags as per http://validator.w3.org
+			$svg = $svg.removeAttr('xmlns:a');
+			
+			// Replace image with new SVG
+			$img.replaceWith($svg);
+		});
+	
 	});
-
-	jQuery( 'a[rel^="lightbox"]' ).prettyPhoto({social_tools: false});
-}
-
+		
 }); // End jQuery()
 
 

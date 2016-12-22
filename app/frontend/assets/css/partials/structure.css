@@ -18,12 +18,6 @@
   position: relative;
   background-size: auto; }
 
-/* Make optional */
-#logo {
-	width: 180px;
-	height: auto;
-}
-
 #logo .site-title {
   line-height: inherit;
   margin-bottom: 5px;
@@ -48,6 +42,13 @@
   color: #999;
   font-weight: 300; }
 
+#logo .logotype {display: block;height: auto;}
+/* Make options
+#logo .logotype {width: 200px; margin-top:em; margin-bottom:em;}
+#logo .logotype path {fill:#231f20;}
+#logo .logotype:hover path {fill:#373737;}
+*/
+	
 .header-widget {
   margin: 2em 0 0;
   float: none;

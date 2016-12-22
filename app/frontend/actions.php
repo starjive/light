@@ -402,7 +402,10 @@ function sf_custom_styling() {
 						   'sf_link_color', 'sf_link_hover_color', 'sf_button_color', 'sf_button_hover_color', 'sf_header_bg', 'sf_header_bg_image', 'sf_header_bg_image_repeat',
 						   'sf_layout_content_padding_top', 'sf_layout_content_padding_right', 'sf_layout_content_padding_bottom', 'sf_layout_content_padding_left',
 						   'sf_layout_content_mobile_padding_top', 'sf_layout_content_mobile_padding_right', 'sf_layout_content_mobile_padding_bottom', 'sf_layout_content_mobile_padding_left',
-						   'sf_header_border', 'sf_header_margin_top', 'sf_header_margin_bottom', 'sf_header_padding_top', 'sf_header_padding_right', 'sf_header_padding_bottom', 'sf_header_padding_left', 
+						   'sf_header_border', 'sf_header_margin_top', 'sf_header_margin_bottom', 'sf_header_padding_top', 'sf_header_padding_right', 'sf_header_padding_bottom', 'sf_header_padding_left',
+						   
+						   'sf_logo_width', 'sf_logo_margin_top', 'sf_logo_margin_bottom', 'sf_logo_color', 'sf_logo_hover_color',
+						   
 						   'sf_font_logo', 'sf_font_desc', 'sf_layout_boxed', 'sf_style_box_bg', 'sf_box_margin_top', 'sf_box_margin_bottom',
 						   'sf_box_border_tb', 'sf_box_border_lr', 'sf_box_border_radius', 'sf_box_shadow', 'sf_full_header_full_width_bg', 'sf_full_header_bg_image',
 						   'sf_full_header_bg_image_repeat', 'sf_nav_bg', 'sf_nav_divider_border', 'sf_nav_border_top', 'sf_nav_border_bot', 'sf_foot_full_width_widget_bg',
@@ -666,7 +669,17 @@ function sf_custom_styling() {
 		if ( $sf_footer_widget_border_bottom )
 			$output .= '#footer-widgets {border-bottom:'.$sf_footer_widget_border_bottom["width"].'px '.$sf_footer_widget_border_bottom["style"].' '.$sf_footer_widget_border_bottom["color"].'}' . "\n";
 
-		//Navigation
+		// Logotype
+		if ( $sf_logo_width )
+			$output .= '#logo .logotype { width:'.$sf_logo_width.'px; }' . "\n";
+		if ( $sf_logo_margin_top <> '' || $sf_logo_margin_bottom <> '' )
+			$output .= '#logo .logotype { margin-top:'.$sf_logo_margin_top.'em;margin-bottom:'.$sf_logo_margin_bottom.'em; }' . "\n";
+		if ( $sf_nav_hover )
+			$output .= '#logo .logotype path { fill:'.$sf_logo_color.'; }' . "\n";
+		if ( $sf_nav_hover )
+			$output .= '#logo .logotype:hover path { fill:'.$sf_logo_hover_color.'; }' . "\n";
+
+		// Navigation
 		global $is_IE;
 		if ( !$is_IE )
 			$output .= '@media only screen and (min-width:768px) {' . "\n";
@@ -2355,7 +2368,7 @@ function sf_enqueue_custom_styling () {
 			if ( ( '' != $logo_url ) ) {
 				if ( is_ssl() ) $logo_url = str_replace( 'http://', 'https://', $logo_url );
 		
-				echo '<a href="' . esc_url( $site_url ) . '" title="' . esc_attr( $site_description ) . '"><img src="' . esc_url( $logo_url ) . '" alt="' . esc_attr( $site_title ) . '" /></a>' . "\n";
+				echo '<a href="' . esc_url( $site_url ) . '" title="' . esc_attr( $site_description ) . '"><img class="logotype" src="' . esc_url( $logo_url ) . '" alt="' . esc_attr( $site_title ) . '" /></a>' . "\n";
 			} // End IF Statement
 		
 			echo '<' . $heading_tag . ' class="site-title"><a href="' . esc_url( $site_url ) . '">' . $site_title . '</a></' . $heading_tag . '>' . "\n";
