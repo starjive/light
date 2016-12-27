@@ -29,26 +29,26 @@
   display: block; }
 
 #logo .site-title a {
-  color: #222;
-  font-size: 40px;
-  line-height: 40px;
-  text-transform: none;
-  text-decoration: none; }
+	color: #222;
+	font-size: 40px;
+	line-height: 40px;
+	text-transform: none;
+	text-decoration: none;
+	}
 
 #logo .site-title a:hover {
-  text-decoration: none; }
+	text-decoration: none;
+	}
 
 #logo .site-description {
-  color: #999;
-  font-weight: 300; }
+	color: #999;
+	font-weight: 300;
+	}
 
-#logo .logotype {display: block;height: auto;}
-/* Make options
-#logo .logotype {width: 200px; margin-top:em; margin-bottom:em;}
-#logo .logotype path {fill:#231f20;}
-#logo .logotype:hover path {fill:#373737;}
-*/
-	
+#logo .logotype {
+	margin: 0 auto;
+	}
+
 .header-widget {
   margin: 2em 0 0;
   float: none;

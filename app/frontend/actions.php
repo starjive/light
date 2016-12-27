@@ -384,7 +384,10 @@ function sf_custom_styling() {
 	$output = '';
 
 	// Logo
-	if ( isset( $sf_options['sf_logo'] ) && $sf_options['sf_logo'] ) $output .= '#logo .site-title, #logo .site-description { display:none; }' . "\n";
+	if ( isset( $sf_options['sf_logo'] ) && $sf_options['sf_logo'] ) {
+		$output .= '#logo .site-title, #logo .site-description { display:none; }' . "\n";
+		$output .= '#logo .logotype { display:block; height:auto; }' . "\n";
+	}
 
 	// Check if we want to generate the custom styling or not.
 	if ( ! isset( $sf_options['sf_style_disable'] ) ) {
@@ -404,7 +407,7 @@ function sf_custom_styling() {
 						   'sf_layout_content_mobile_padding_top', 'sf_layout_content_mobile_padding_right', 'sf_layout_content_mobile_padding_bottom', 'sf_layout_content_mobile_padding_left',
 						   'sf_header_border', 'sf_header_margin_top', 'sf_header_margin_bottom', 'sf_header_padding_top', 'sf_header_padding_right', 'sf_header_padding_bottom', 'sf_header_padding_left',
 						   
-						   'sf_logo_width', 'sf_logo_margin_top', 'sf_logo_margin_bottom', 'sf_logo_color', 'sf_logo_hover_color',
+						   'sf_logo_width', 'sf_logo_margin_top', 'sf_logo_margin_bottom',/* 'sf_logo_color', 'sf_logo_hover_color',*/
 						   
 						   'sf_font_logo', 'sf_font_desc', 'sf_layout_boxed', 'sf_style_box_bg', 'sf_box_margin_top', 'sf_box_margin_bottom',
 						   'sf_box_border_tb', 'sf_box_border_lr', 'sf_box_border_radius', 'sf_box_shadow', 'sf_full_header_full_width_bg', 'sf_full_header_bg_image',
@@ -674,10 +677,12 @@ function sf_custom_styling() {
 			$output .= '#logo .logotype { width:'.$sf_logo_width.'px; }' . "\n";
 		if ( $sf_logo_margin_top <> '' || $sf_logo_margin_bottom <> '' )
 			$output .= '#logo .logotype { margin-top:'.$sf_logo_margin_top.'em;margin-bottom:'.$sf_logo_margin_bottom.'em; }' . "\n";
+		/*
 		if ( $sf_nav_hover )
 			$output .= '#logo .logotype path { fill:'.$sf_logo_color.'; }' . "\n";
 		if ( $sf_nav_hover )
 			$output .= '#logo .logotype:hover path { fill:'.$sf_logo_hover_color.'; }' . "\n";
+		*/
 
 		// Navigation
 		global $is_IE;

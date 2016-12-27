@@ -125,7 +125,7 @@ if (!function_exists( 'sf_options')) {
 		$options[] = array( 'name' => __( 'Logotype Margin', 'sfwp-locale' ),
 							'desc' => __( 'Enter an integer value i.e. 20 for the desired top and bottom margin.', 'sfwp-locale' ),
 							//'id' => $shortname.'_logo_margin',
-							'std' => '',
+							//'std' => '',
 							'type' => array(
 								array( 'id' => $shortname.'_logo_margin_top',
 										'type' => 'text',
@@ -136,7 +136,7 @@ if (!function_exists( 'sf_options')) {
 										'std' => '0',
 										'meta' => __( 'Bottom', 'sfwp-locale' ) )
 							  ));
-		
+		/*
 		$options[] = array( 'name' => __( 'Logotype Color (SVG)', 'sfwp-locale' ),
 							'desc' => __( 'Pick a custom color to fill your svg logotype add a hex color code e.g. #0278c0', 'sfwp-locale' ),
 							'id' => $shortname.'_logo_color',
@@ -148,7 +148,7 @@ if (!function_exists( 'sf_options')) {
 							'id' => $shortname.'_logo_hover_color',
 							'std' => '#373737',
 							'type' => 'color' );
-											
+		*/
 		$options[] = array( 'name' => __( 'Favicon', 'sfwp-locale' ),
 							'desc' => __( 'Upload a 16x16 pixel ico/png/gif image that will represent your website\'s favicon, or specify an image URL directly.', 'sfwp-locale' ),
 							'id' => $shortname.'_custom_favicon',
