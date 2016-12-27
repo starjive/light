@@ -82,7 +82,6 @@ body .wooslider .slide-content {
       line-height: 1;
       text-indent: -9999px;
       color: rgba(0, 0, 0, 0.5);
-      text-shadow: none;
       border: 2px solid;
       border-radius: 100%; }
       .wooslider .wooslider-direction-nav a:before {

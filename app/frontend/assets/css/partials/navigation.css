@@ -166,7 +166,6 @@ ul.nav ul li.current-menu-item a,
   font-weight: normal;
   color: #fff;
   margin-left: 0.5em;
-  text-shadow: 0 1px 0 #000;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   display: inline-block;
   padding: 0.8em 1em 0.8em 0.5em; }
@@ -185,7 +184,6 @@ ul.nav ul li.current-menu-item a,
 
 .nav-toggle a {
   color: #fff !important;
-  text-shadow: 0 1px 0 #000;
   padding: 0.5em 1em;
   border-left: 1px solid rgba(0, 0, 0, 0.1); }
 
@@ -407,7 +405,6 @@ ul.nav ul li.current-menu-item a,
           color: #222; }
     #navigation ul {
       margin-bottom: 0;
-	  text-shadow: 0 2px 0 0px hsl(330, 100%, 25%), 0 3px 2px 0px hsla(330, 100%, 15%, 0.5);
 	  }
       #navigation ul ul {
         margin-left: 0;
