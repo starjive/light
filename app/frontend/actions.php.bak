@@ -465,9 +465,9 @@ function sf_custom_styling() {
 		if ($sf_link_hover_color)
 			$output .= 'a:hover, .post-more a:hover, .post-meta a:hover, .post p.tags a:hover {color:'.$sf_link_hover_color.'}' . "\n";
 		if ($sf_button_color)
-			$output .= 'body #wrapper .button, body #wrapper #content .button, body #wrapper #content .button:visited, body #wrapper #content .reply a, body #wrapper #content #respond .form-submit input#submit, input[type=submit], body #wrapper #searchsubmit, #navigation ul.cart .button {border: none; background:'.$sf_button_color.'}' . "\n";
+			$output .= 'body #wrapper .button, body #wrapper #content .button, body #wrapper #content .button:visited, body #wrapper #content .reply a, body #wrapper #content #respond .form-submit input#submit, input[type=submit], body #wrapper #searchsubmit, #navigation ul.cart .button, body #wrapper .sf-sc-button {border: none; background:'.$sf_button_color.'}' . "\n";
 		if ($sf_button_hover_color)
-			$output .= 'body #wrapper .button:hover, body #wrapper #content .button:hover, body #wrapper #content .reply a:hover, body #wrapper #content #respond .form-submit input#submit:hover, input[type=submit]:hover, body #wrapper #searchsubmit:hover, #navigation ul.cart .button:hover {border: none; background:'.$sf_button_hover_color.'}' . "\n";
+			$output .= 'body #wrapper .button:hover, body #wrapper #content .button:hover, body #wrapper #content .reply a:hover, body #wrapper #content #respond .form-submit input#submit:hover, input[type=submit]:hover, body #wrapper #searchsubmit:hover, #navigation ul.cart .button:hover, body #wrapper .sf-sc-button:hover {border: none; background:'.$sf_button_hover_color.'}' . "\n";
 		
 		// Header styling
 		$header_css = '';

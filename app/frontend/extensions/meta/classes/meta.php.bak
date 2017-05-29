@@ -5,7 +5,7 @@
  * This is the filters class, containing all processing and setup functionality
  * for managing the metadata above and below blog post content.
  *
- * @package Framework
+ * @package WooFramework
  * @subpackage Module
  *
  * CLASS INFORMATION

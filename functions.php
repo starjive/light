@@ -39,6 +39,9 @@
 		'app/frontend/shortcodes.php',	 								// Theme shortcodes
 		'app/frontend/extensions/meta/meta.php',						// Extensions Meta Manager
 		'app/frontend/extensions/hooks/hooks.php',						// Extensions Hook Manager
+		'app/frontend/extensions/branding/branding.php',				// Extensions Branding Manager
+		'app/frontend/extensions/tweaks/tweaks.php',					// Extensions Tweaks Manager
+		'app/frontend/extensions/help-me-save/help-me-save.php',		// Extensions Help Me Save Manager
 	);
 
 	/**

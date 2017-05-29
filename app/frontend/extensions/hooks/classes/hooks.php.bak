@@ -639,7 +639,7 @@ class Hook_Manager {
 	} // End _setup_hook_titles()
 
 	/**
- 	 * Add our saved data to the Framework data exporter.
+ 	 * Add our saved data to the WooFramework data exporter.
  	 * @access  public
 	 * @since	1.0
  	 * @param   string $data SQL query.
